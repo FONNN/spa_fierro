@@ -1,7 +1,10 @@
 import { useState } from 'react'
-import logo from './logo.svg'
+// import logo from './logo.svg'
 import './App.css'
-import Navbar from './components/NavBar/Navbar'
+import NavBar from './components/NavBar/NavBar'
+import Title from './components/Title/Title'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 
 function App() {
@@ -16,29 +19,31 @@ function App() {
   //   }
   // }
 
-  // const persona = new Persona('Benito', 'Camelo', 36);
-  // console.log(persona);
+  // let age = 'age';
 
-  let age = 'age';
+  // const objPerson = {
+  //   name: 'Goretti',
+  //   last_name: 'Amorcito',
+  //   [age] : 32
+  // }
 
-  const objPerson = {
-    name: 'Goretti',
-    last_name: 'Amorcito',
-    [age] : 32
-  }
-  // console.log(objPerson);
-  const {name, last_name} = objPerson;
-  console.log(name, last_name, age = 32);
+  // // console.log(objPerson);
+  // const {name, last_name} = objPerson;
+  // console.log(name, last_name, age = 32);
 
 
-  const testStyles = {
-    backgroundColor: 'gray', color: 'pink'
-  }
+  // const testStyles = {
+  //   backgroundColor: 'gray', color: 'pink'
+  // }
 
 
   return (
     <div className="App">
-      <Navbar />
+      <NavBar />
+      {/* <Title title='ONE' subTitle='1 sub'/>
+      <Title title='TWO' subTitle='2 sub'/>
+      <Title title='THREE' subTitle='3 sub'/> */}
+      <ItemListContainer greeting='Saludos desde prop ItemListContainer!'/>
     </div>
   )
 }
