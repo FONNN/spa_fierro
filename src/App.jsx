@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar'
 import Title from './components/Title/Title'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemCount from './components/ItemCount/ItemCount';
 
 
 function App() {
