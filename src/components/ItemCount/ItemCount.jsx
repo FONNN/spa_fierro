@@ -22,6 +22,10 @@ const ItemCount = ({ initial, stock, onAdd}) => {
         console.log(`La cantidad es ${cant}`);
     }
 
+    const handleAddCart = () => {
+        onAdd(count)
+    }
+
 
     return (
         <div className='card w-25'>
@@ -31,7 +35,7 @@ const ItemCount = ({ initial, stock, onAdd}) => {
             {' '}
             <Button onClick={handleAdd} variant="outline-info"> + </Button>
             <br />
-            <Button onClick={() => onAdd(count)} variant="outline-secondary"> Agregar al Carrito </Button>
+            <Button onClick={handleAddCart} variant="outline-secondary"> Agregar al Carrito </Button>
         </div>
     )
 }
