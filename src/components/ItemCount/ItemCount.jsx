@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 
-const ItemCount = ({ initial=1, stock=10, onAdd}) => {
+const ItemCount = ({ initial, stock, onAdd}) => {
     const [count, setCount] = useState(initial)
 
     // suma y resta
@@ -18,8 +18,8 @@ const ItemCount = ({ initial=1, stock=10, onAdd}) => {
         }
     }
 
-    onAdd = () => {
-        console.log(`La cantidad es ${count}`);
+    onAdd = (cant) => {
+        console.log(`La cantidad es ${cant}`);
     }
 
 
