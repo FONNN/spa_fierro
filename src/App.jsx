@@ -23,9 +23,9 @@ function App() {
   // let age = 'age';
 
   // const objPerson = {
-  //   name: 'Goretti',
-  //   last_name: 'Amorcito',
-  //   [age] : 32
+  //   name: 'Go',
+  //   last_name: 'Am',
+  //   [age] : 3
   // }
 
   // // console.log(objPerson);
