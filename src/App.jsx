@@ -41,9 +41,6 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <Title title='ONE' subTitle='1 sub'/>
-      <Title title='TWO' subTitle='2 sub'/>
-      <Title title='THREE' subTitle='3 sub'/> */}
       <ItemListContainer greeting='Saludos desde prop ItemListContainer!'/>
     </div>
   )
