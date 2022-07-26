@@ -8,19 +8,16 @@ let productos = [
 
 //objeto de tipo promesa
 export const task = (id) => {
-    if (id) {
+
         return new Promise((resolve, reject) => {
             //acciones
             setTimeout(() => {
-                resolve(productos.find(producto => producto.id === id))
-            }, 2000)
+                if (id) {
+                    resolve(productos.find(producto => producto.id === id))
+                } else {
+                    resolve(productos)
+                }
+            }, 1000)
         })
-    } else {
-        return new Promise( ( resolve, reject) => {
-            setTimeout( () => {
-                resolve(productos)
-            }, 2000)
-        })
-    }
 }
 

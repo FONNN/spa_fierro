@@ -3,9 +3,9 @@ import Item from '../Item/Item';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-// import CardGroup from 'react-bootstrap/CardGroup';
+import CardGroup from 'react-bootstrap/CardGroup';
 
-import { CardGroup } from 'react-bootstrap';
+// import { CardGroup } from 'react-bootstrap';
 
 const ItemList = ({ productos }) => {
 

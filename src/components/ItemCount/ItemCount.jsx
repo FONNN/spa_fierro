@@ -31,9 +31,9 @@ const ItemCount = ({ initial, stock, onAdd}) => {
         <div className='card w-25'>
             <label>{count}</label>
             <br />
-            <Button onClick={handleSubtract} variant="outline-info"> - </Button>
-            {' '}
             <Button onClick={handleAdd} variant="outline-info"> + </Button>
+            {' '}
+            <Button onClick={handleSubtract} variant="outline-info"> - </Button>
             <br />
             <Button onClick={handleAddCart} variant="secondary"> Agregar al Carrito </Button>
         </div>
