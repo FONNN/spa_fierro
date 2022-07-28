@@ -18,13 +18,14 @@ function App() {
       <div className="App">
         <NavBar />
         <Routes>
-          <Route path='/' element={<ItemListContainer />}/>
+          <Route index path='/' element={<ItemListContainer />}/>
+          <Route path='/category/:categoryid' element={<ItemListContainer />}/>
           <Route path='/detail/:detailid' element={<ItemDetailContainer/>}/>
           <Route path='/carrito' element={<CartWidget/>}/>
           {/* <Route path='/notfound' element={<NotFound />} /> */}
 
           {/*'para notFound'*/}
-          <Route path='*' element={ <Navigate to='/' /> } />
+          <Route path='*' element={<Navigate to='/'/>} />
         </Routes>
       </div>
     </BrowserRouter>

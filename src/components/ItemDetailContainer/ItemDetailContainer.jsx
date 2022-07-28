@@ -1,5 +1,9 @@
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from 'react-router-dom'
+import { task } from "../../helpers/task"
+
+import { useEffect } from 'react'
+
 
 
 const ItemDetailContainer = () => {
@@ -7,6 +11,12 @@ const ItemDetailContainer = () => {
     // hook useParams
     const {detailid} = useParams()
     console.log(detailid);
+
+    //task(detailid)
+    useEffect( () => {
+        task(detailid)
+        .then(resp => console.log(resp))
+    }, [])
 
 
     return (

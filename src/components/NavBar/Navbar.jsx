@@ -15,7 +15,7 @@ const NavBar = () => {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
                 <NavLink to='/' >
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand>
                         <img
                             alt=""
                             src="/src/components/NavBar/logo.svg"
@@ -29,18 +29,20 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <NavLink to='/'>
-                            <Nav.Link href="#services">Servicios</Nav.Link>
+                        <NavLink to='/category/services'>
+                            Servicios
                         </NavLink>
-                        <Nav.Link href="#pricing">Precios</Nav.Link>
+                        <NavLink to='/category/prices'>
+                            Precios
+                        </NavLink>
                         <NavDropdown title="Sector" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Educacion</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
+                            <NavDropdown.Item >Educacion</NavDropdown.Item>
+                            <NavDropdown.Item >
                                 Empresas
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Consultas</NavDropdown.Item>
+                            <NavDropdown.Item >Consultas</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
+                            <NavDropdown.Item >
                                 Separated link
                             </NavDropdown.Item>
                         </NavDropdown>
