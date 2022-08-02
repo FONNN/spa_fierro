@@ -1,7 +1,5 @@
 import React from 'react'
 import Item from '../Item/Item';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 
 import CardGroup from 'react-bootstrap/CardGroup';
 
@@ -10,11 +8,13 @@ import CardGroup from 'react-bootstrap/CardGroup';
 const ItemList = ({ productos }) => {
 
     return (
-        <CardGroup>
-            {
-                productos?.map(products => <Item key={products.id} products={products} />)
-            }
-        </CardGroup>
+        <>
+            <CardGroup>
+                {
+                    productos?.map(products => <Item key={products.id} products={products} />)
+                }
+            </CardGroup>
+        </>
     )
 }
 // <div className="container text-center">

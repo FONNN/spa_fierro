@@ -29,12 +29,13 @@ const ItemCount = ({ initial, stock, onAdd}) => {
 
     return (
         <div>
-            <Button onClick={handleAdd} variant="outline-info"> + </Button>
+            <Button onClick={handleSubtract} variant="outline-info"> - </Button>
             {' '}
             <label>{count}</label>
             {' '}
-            <Button onClick={handleSubtract} variant="outline-info"> - </Button>
-            <Button onClick={handleAddCart} variant="secondary"> Agregar al Carrito </Button>
+            <Button onClick={handleAdd} variant="outline-info"> + </Button>
+            {' '}
+            <Button onClick={handleAddCart} variant="outline-secondary"> Agregar al Carrito </Button>
         </div>
     )
 }

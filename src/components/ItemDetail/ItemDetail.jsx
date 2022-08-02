@@ -2,7 +2,7 @@
 import ItemCount from '../ItemCount/ItemCount'
 import '/src/components/ItemDetail/ItemDetail.css'
 
-const ItemDetail = ({ products }) => {
+const ItemDetail = ({ product }) => {
     return (
         // <div>
         //   ItemDetail
@@ -15,7 +15,7 @@ const ItemDetail = ({ products }) => {
                     <div className="panel-body">
                         <div className="col-md-6">
                             <div className="pro-img-details">
-                                <img src="https://via.placeholder.com/550x380/FFB6C1/000000" alt="" />
+                                <img src={product.image} alt="foto de producto" />
                             </div>
                             <div className="pro-img-list">
                                 <a href="#">
@@ -33,19 +33,19 @@ const ItemDetail = ({ products }) => {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <h4 className="pro-d-title">
-                                <a href="#" className="">
-                                    Leopard Shirt Dress
-                                </a>
-                            </h4>
+                            <h3 className="pro-d-title">
+                                {product.name}
+                            </h3>
                             <p>
-                                Praesent ac condimentum felis. Nulla at nisl orci, at dignissim dolor, The best product descriptions address your ideal buyer directly and personally. The best product descriptions address your ideal buyer directly and personally.
+                                {product.description}
                             </p>
                             <div className="product_meta">
-                                <span className="posted_in"> <strong>Categories:</strong> <a rel="tag" href="#">Jackets</a>, <a rel="tag" href="#">Men</a>, <a rel="tag" href="#">Shirts</a>, <a rel="tag" href="#">T-shirt</a>.</span>
-                                <span className="tagged_as"><strong>Tags:</strong> <a rel="tag" href="#">mens</a>, <a rel="tag" href="#">womens</a>.</span>
+                                <span className="posted_in"> <strong>Categoria:</strong> <a rel="tag">{product.category}</a>.</span>
+                                <span className="tagged_as"><strong>Stock:</strong> <a rel="tag">{product.stock}</a></span>
                             </div>
-                            <ItemCount initial={1} stock={15} onAdd />
+                            <div>
+                                <ItemCount initial={1} stock={15} onAdd />
+                            </div>
                         </div>
                     </div>
                 </section>

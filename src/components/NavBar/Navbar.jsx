@@ -1,7 +1,6 @@
 // import styled from 'styled-components'
 import './Navbar.css'
 // react-bootstrap
-import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
 import Nav from 'react-bootstrap/Nav'
@@ -29,6 +28,7 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
+                        {/*C07 - min1:35:00 */}
                         <NavLink to='/category/services'>
                             Servicios
                         </NavLink>

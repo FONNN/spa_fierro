@@ -1,6 +1,4 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
-// import ItemCount from '../ItemCount/ItemCount';
+import { useEffect, useState } from 'react';
 import { task } from '../../helpers/task';
 import Spinner from 'react-bootstrap/Spinner';
 import ItemList from '../ItemList/ItemList';
@@ -19,9 +17,9 @@ const ItemListContainer = ({ greeting }) => {
   useEffect(() => {
     if (categoryid) {
       task() //mock consulta api
-      .then(resp => setProducts(resp.filter(products => products.category === categoryid)))
-      .catch(err => console.log(err))
-      .finally(() => setLoading(false))
+        .then(resp => setProducts(resp.filter(products => products.category === categoryid)))
+        .catch(err => console.log(err))
+        .finally(() => setLoading(false))
     } else {
       task()
         .then(resp => setProducts(resp))
@@ -33,7 +31,7 @@ const ItemListContainer = ({ greeting }) => {
   console.log(categoryid);
 
   return (
-    <div className='itemListContainer'>
+    <div>
       {greeting}
 
         {loading ?
