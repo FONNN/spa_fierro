@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import '/src/components/ItemDetail/ItemDetail.css'
+import { Link } from "react-router-dom"
 
 const ItemDetail = ({ product }) => {
 
@@ -48,11 +49,19 @@ const ItemDetail = ({ product }) => {
                                 <span className="tagged_as"><strong>Stock:</strong> <a rel="tag">{product.stock}</a></span>
                             </div>
                             <div>
-                                <ItemCount
-                                    initial={1}
-                                    stock={30}
-                                    onAdd={onAdd}
-                                />
+                            {
+                                isCount ?
+                                        <ItemCount initial={1} stock={30} onAdd={onAdd} />
+                                    :
+                                        <>
+                                            <Link to={'/cart'}>
+                                                <button className="btn btn-outline-success" >Terminar Compra</button>
+                                            </Link>
+                                            <Link to={'/'}>
+                                                <button className="btn btn-outline-primary" >Seguir Comprando</button>
+                                            </Link>
+                                        </>
+                            }
                             </div>
                         </div>
                     </div>

@@ -21,7 +21,7 @@ function App() {
           <Route index path='/' element={<ItemListContainer />} />
           <Route path='/category/:categoryid' element={<ItemListContainer />} />
           <Route path='/detail/:detailid' element={<ItemDetailContainer/>} />
-          <Route path='/carrito' element={<CartWidget/>} />
+          <Route path='/cart' element={<CartWidget/>} />
           {/* <Route path='/notfound' element={<NotFound />} /> */}
 
           {/*'para notFound'*/}
