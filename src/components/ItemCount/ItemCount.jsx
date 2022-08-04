@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 
-const ItemCount = ({ initial, stock, onAdd}) => {
+const ItemCount = ({ initial, stock}) => {
     const [count, setCount] = useState(initial)
 
     // suma y resta
@@ -13,18 +13,17 @@ const ItemCount = ({ initial, stock, onAdd}) => {
     }
 
     const handleSubtract = () => {
-        if (count > 1) {
+        if (count > initial) {
             setCount(count - 1)
         }
     }
 
-    onAdd = (cant) => {
-        console.log(`La cantidad es ${cant}`);
-    }
-
     const handleAddCart = () => {
-        onAdd(count)
+        if (count < stock) {
+            onAdd(count)
+        }
     }
+    //fin suma y resta
 
 
     return (

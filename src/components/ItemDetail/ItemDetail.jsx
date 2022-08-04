@@ -1,14 +1,18 @@
 
+import { useState } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import '/src/components/ItemDetail/ItemDetail.css'
 
 const ItemDetail = ({ product }) => {
-    return (
-        // <div>
-        //   ItemDetail
-        //   <ItemCount initial={1} stock={15} onAdd />
-        // </div>
 
+    const [ isCount, setIsCount ] = useState(true)
+
+    const onAdd = (cant) => {
+        console.log(`La cantidad es ${cant}`)
+        setIsCount(false)
+    }
+
+    return (
         <div className="container bootdey">
             <div className="col-md-12">
                 <section className="panel">
@@ -44,7 +48,11 @@ const ItemDetail = ({ product }) => {
                                 <span className="tagged_as"><strong>Stock:</strong> <a rel="tag">{product.stock}</a></span>
                             </div>
                             <div>
-                                <ItemCount initial={1} stock={15} onAdd />
+                                <ItemCount
+                                    initial={1}
+                                    stock={30}
+                                    onAdd={onAdd}
+                                />
                             </div>
                         </div>
                     </div>
