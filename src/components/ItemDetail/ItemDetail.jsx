@@ -1,15 +1,18 @@
 
 import { useState } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
+import { useCartContext } from '../../context/CartContext/CartContext'
 import '/src/components/ItemDetail/ItemDetail.css'
 import { Link } from "react-router-dom"
 
 const ItemDetail = ({ product }) => {
 
     const [ isCount, setIsCount ] = useState(true)
+    const { addToCart } = useCartContext()
 
     const onAdd = (cant) => {
         console.log(`La cantidad es ${cant}`)
+        addToCart( { ...product, amount: cant } )
         setIsCount(false)
     }
 
