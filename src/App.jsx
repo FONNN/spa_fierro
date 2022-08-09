@@ -8,6 +8,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import CartWidget from './components/CartWidget/CartWidget'
 import CartContextProvider from './context/CartContext/CartContext'
+import Cart from './components/Cart/Cart'
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
             <Route index path='/' element={<ItemListContainer />} />
             <Route path='/category/:categoryid' element={<ItemListContainer />} />
             <Route path='/detail/:detailid' element={<ItemDetailContainer/>} />
-            <Route path='/cart' element={<CartWidget/>} />
+            <Route path='/cart' element={<Cart />} />
             {/* <Route path='/notfound' element={<NotFound />} /> */}
 
             {/*'para notFound'*/}

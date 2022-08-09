@@ -1,11 +1,8 @@
 // import styled from 'styled-components'
 import './Navbar.css'
 // react-bootstrap
-import Container from 'react-bootstrap/Container'
+import {Container , NavDropdown, Navbar, Nav} from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
 import CartWidget from '../CartWidget/CartWidget'
 import { Link, NavLink } from 'react-router-dom'
 
@@ -47,9 +44,9 @@ const NavBar = () => {
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <NavLink to='/carrito'>
+                    <Link to='/cart'>
                         <CartWidget />
-                    </NavLink>
+                    </Link>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
