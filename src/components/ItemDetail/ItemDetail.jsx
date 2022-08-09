@@ -49,7 +49,7 @@ const ItemDetail = ({ product }) => {
                             </p>
                             <div className="product_meta">
                                 <span className="posted_in"> <strong>Categoria:</strong> <a rel="tag">{product.category}</a>.</span>
-                                <span className="tagged_as"><strong>Stock:</strong> <a rel="tag">{product.stock}</a></span>
+                                <span className="tagged_as"><strong>Precio:</strong> <a rel="tag">{product.price}</a></span>
                             </div>
                             <div>
                             {

@@ -3,7 +3,8 @@ import { useCartContext } from '../../context/CartContext/CartContext'
 
 const Cart = () => {
 
-    const { cartList, emptyCart } = useCartContext()
+    const { cartList, emptyCart, deleteProduct, totalQuantity, totalPrice } = useCartContext()
+    console.log(cartList);
 
     return (
         <div>
@@ -13,7 +14,7 @@ const Cart = () => {
                     <li key={item.id}>
                         <div className='w-25'>
                             <img src={item.image} alt='foto del producto' className='w-25' />
-                            Nombre: {item.name} - Cantidad: {item.stock} - Precio: {item.price}
+                            Nombre: {item.name} - Cantidad: {item.cant} - Precio: {item.price} - Subtotal: {item.cant * item.price}
                         </div>
                     </li>
                 ))}
