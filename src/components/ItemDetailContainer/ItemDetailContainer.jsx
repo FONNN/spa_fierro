@@ -12,14 +12,12 @@ const ItemDetailContainer = () => {
 
     // hook useParams
     const {detailid} = useParams()
-    console.log(detailid);
 
     //task(detailid)
     useEffect( () => {
         task(detailid)
         .then(resp => setProduct(resp))
     }, [detailid])
-    console.log(product)
 
     return (
         <div className="itemDetailContainer">

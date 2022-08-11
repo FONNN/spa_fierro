@@ -11,7 +11,7 @@ const ItemDetail = ({ product }) => {
     const { addToCart } = useCartContext()
 
     const onAdd = (cant) => {
-        console.log(`La cantidad es ${cant}`)
+        alert(`La cantidad es ${cant}`)
         addToCart( { ...product, amount: cant } )
         setIsCount(false)
     }
@@ -27,7 +27,7 @@ const ItemDetail = ({ product }) => {
                             </div>
                             <div className="pro-img-list">
                                 <a href="#">
-                                    <img src="https://via.placeholder.com/115x100/87CEFA/000000" alt="" />
+                                    <img src={product.image} className="img-fluid img-thumbnail" alt="thumbnail 1" />
                                 </a>
                                 <a href="#">
                                     <img src="https://via.placeholder.com/115x100/FF7F50/000000" alt="" />

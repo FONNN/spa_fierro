@@ -14,7 +14,7 @@ const Cart = () => {
                     <li key={item.id}>
                         <div className='w-25'>
                             <img src={item.image} alt='foto del producto' className='w-25' />
-                            Nombre: {item.name} - Cantidad: {item.cant} - Precio: {item.price} - Subtotal: {item.cant * item.price}
+                            Nombre: {item.name} - Cantidad: {item.amount} - Precio: {item.price} - Subtotal: {item.amount * item.price}
                         </div>
                     </li>
                 ))}
