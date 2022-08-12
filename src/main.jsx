@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
-import { fireConnect } from './firebase/config'
+import { firebaseConnect } from './firebase/config'
 
-fireConnect()
+firebaseConnect()
 
 ReactDOM.render(
   <React.StrictMode>

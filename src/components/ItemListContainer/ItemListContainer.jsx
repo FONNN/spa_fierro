@@ -3,26 +3,39 @@ import { task } from '../../helpers/task';
 import Spinner from 'react-bootstrap/Spinner';
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom'
-import { doc, getDoc, getFirestore } from 'firebase/firestore'
+import { collection, doc, getDoc, getDocs, getFirestore } from 'firebase/firestore'
 
 
 
 const ItemListContainer = ({ greeting }) => {
 
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState({})
   const [loading, setLoading] = useState(true)
 
   //designar lo indicado en el enrutado
   const { categoryid } = useParams()
 
-  //*** traer producto por id ***
-  useEffect( () => {
-    const db = getFirestore()
-    const queryProduct = doc(db, 'items', I8uMsCFL0phOF4QrI1Gk)
-    getDoc(queryProduct)
-    .then(resp => console.log(resp))
-  }, [])
-  //*** END traer producto por id ***
+  //*** traer producto por id forma 1***
+        // useEffect( () => {
+        //   const db = getFirestore()
+
+        //   const queryProduct = doc(db, 'items', 'I8uMsCFL0phOF4QrI1Gk')
+        //   getDoc(queryProduct)
+        //   .then(resp => setProducts( { id: resp.id, ...resp.data() }  ))
+        // }, [])
+        // console.log(products);
+  //*** END traer producto por id forma 1***
+
+  //*** traer producto por id forma 2***
+        useEffect(() => {
+          const db = getFirestore()
+          const queryCollection = collection(db, 'items')
+          getDocs(queryCollection)
+          .then(resp => setProducts( resp.docs.map(prod => ({ id: prod.id, ...prod.data() })) ))
+          .catch( err => console.log(err) )
+          .finally(() => setLoading(false))
+        }, [])
+  //*** END traer producto por id forma 2***
 
   // useEffect(() => {
   //   if (categoryid) {

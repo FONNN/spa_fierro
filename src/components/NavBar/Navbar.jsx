@@ -26,11 +26,11 @@ const NavBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         {/*C07 - min1:35:00 */}
-                        <NavLink to='/category/services'>
-                            Servicios
+                        <NavLink to='/category/education'>
+                            Educacion
                         </NavLink>
-                        <NavLink to='/category/prices'>
-                            Precios
+                        <NavLink to='/category/business'>
+                            Empresas
                         </NavLink>
                         <NavDropdown title="Sector" id="collasible-nav-dropdown">
                             <NavDropdown.Item >Educacion</NavDropdown.Item>
