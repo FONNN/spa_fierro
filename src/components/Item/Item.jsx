@@ -14,7 +14,7 @@ const Item = memo(
               {`${products.name} - ${products.category}`}
             </Card.Title>
             <Card.Text>
-              {`stock disponible: ${products.stock}`}
+              {`Precio: ${products.price}`}
             </Card.Text>
             <Link to={`/detail/${products.id}`}>
               <Button variant="info">Ver detalle</Button>

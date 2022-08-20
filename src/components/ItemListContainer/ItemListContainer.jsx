@@ -3,7 +3,7 @@ import { task } from '../../helpers/task';
 import Spinner from 'react-bootstrap/Spinner';
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom'
-import { collection, doc, getDoc, getDocs, getFirestore } from 'firebase/firestore'
+import { collection, doc, getDoc, getDocs, getFirestore, query, where } from 'firebase/firestore'
 
 
 
@@ -17,7 +17,7 @@ const ItemListContainer = ({ greeting }) => {
 
   //*** traer producto por id forma 1***
         // useEffect( () => {
-        //   const db = getFirestore()
+        //   const db = getFirestore() //<- trae el servicio de firestore (ya esta la conexion con firebase)
 
         //   const queryProduct = doc(db, 'items', 'I8uMsCFL0phOF4QrI1Gk')
         //   getDoc(queryProduct)
@@ -36,6 +36,17 @@ const ItemListContainer = ({ greeting }) => {
           .finally(() => setLoading(false))
         }, [])
   //*** END traer producto por id forma 2***
+
+  //*** traer producto por id forma 3***
+        // useEffect(() => {
+        //   const db = getFirestore()
+        //   const queryCollection = collection(db, 'items')
+        //   const qf = query(
+        //     queryCollection,
+        //     where('category', '==', 'shoes')
+        //   )
+        // })
+  //*** END traer producto por id forma 3***
 
   // useEffect(() => {
   //   if (categoryid) {
