@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { task } from '../../helpers/task';
 import Spinner from 'react-bootstrap/Spinner';
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom'
@@ -48,6 +47,7 @@ const ItemListContainer = ({ greeting }) => {
         // })
   //*** END traer producto por id forma 3***
 
+  //PRIMERA CONEXION CON BASE LOCAL task
   // useEffect(() => {
   //   if (categoryid) {
   //     task() //mock consulta api

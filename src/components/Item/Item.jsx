@@ -22,6 +22,17 @@ const Item = memo(
           </Card.Body>
         </Card>
       </div>
+
+      // <div className="card" style={{width: '400px'}}>
+      //   <img className="card-img-top" src={products.image} alt="Card image" style={{width: '100%'}} />
+      //   <div className="card-body">
+      //     <h4 className="card-title">{products.name}</h4>
+      //     <p className="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      //     <Link to={`/detail/${products.id}`}>
+      //       <a href="#" className="btn btn-info">Ver detalle</a>
+      //     </Link>
+      //   </div>
+      // </div>
     )
   }
 )

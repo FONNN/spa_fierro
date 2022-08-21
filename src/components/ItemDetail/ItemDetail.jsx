@@ -16,6 +16,12 @@ const ItemDetail = ({ product }) => {
         setIsCount(false)
     }
 
+    //cambio de imagenes desde las miniaturas
+    const changeImage = element => {
+        let mpi = document.getElementById('main_product_image');
+        mpi.src = element.target.src;
+    }
+
     return (
 
         <div className="container mt-5 mb-5">
@@ -28,10 +34,10 @@ const ItemDetail = ({ product }) => {
                             </div>
                             <div className="thumbnail_images">
                                 <ul id="thumbnail">
-                                    <li><img onclick="changeImage(this)" src={product.image} width="70" /></li>
-                                    <li><img onclick="changeImage(this)" src={product.image} width="70" /></li>
-                                    <li><img onclick="changeImage(this)" src={product.image} width="70" /></li>
-                                    <li><img onclick="changeImage(this)" src={product.image} width="70" /></li>
+                                    <li><img onClick={changeImage} src={product.image} width="70" alt='thumnail 1' /></li>
+                                    <li><img onClick={changeImage} src={product.image} width="70" alt='thumnail 2' /></li>
+                                    <li><img onClick={changeImage} src={product.image} width="70" alt='thumnail 3' /></li>
+                                    <li><img onClick={changeImage} src={product.image} width="70" alt='thumnail 4' /></li>
                                 </ul>
                             </div>
                         </div>
