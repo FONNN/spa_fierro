@@ -1,11 +1,11 @@
-<div className="container mt-5 mb-5">
-    <div className="card">
-        <div className="row g-0">
-            <div className="col-md-6 border-end">
-                <div className="d-flex flex-column justify-content-center">
-                    <div className="main_image"> <img src="https://i.imgur.com/TAzli1U.jpg" id="main_product_image"
+<div classNameName="container mt-5 mb-5">
+    <div classNameName="card">
+        <div classNameName="row g-0">
+            <div classNameName="col-md-6 border-end">
+                <div classNameName="d-flex flex-column justify-content-center">
+                    <div classNameName="main_image"> <img src="https://i.imgur.com/TAzli1U.jpg" id="main_product_image"
                             width="350"> </div>
-                    <div className="thumbnail_images">
+                    <div classNameName="thumbnail_images">
                         <ul id="thumbnail">
                             <li><img onclick="changeImage(this)" src={product.image} width="70"></li>
                             <li><img onclick="changeImage(this)" src={product.image} width="70"></li>
@@ -15,12 +15,12 @@
                     </div>
                 </div>
             </div>
-            <div className="col-md-6">
-                <div className="p-3 right-side">
-                    <div className="d-flex justify-content-between align-items-center">
-                        <h3>{product.name}</h3> <span className="heart"><i className='bx bx-heart'></i></span>
+            <div classNameName="col-md-6">
+                <div classNameName="p-3 right-side">
+                    <div classNameName="d-flex justify-content-between align-items-center">
+                        <h3>{product.name}</h3> <span classNameName="heart"><i classNameName='bx bx-heart'></i></span>
                     </div>
-                    <div className="mt-2 pr-3 content">
+                    <div classNameName="mt-2 pr-3 content">
                         <p>{product.description}</p>
                     </div>
                     <h3>{product.price}</h3>
@@ -31,10 +31,10 @@
                                 :
                                     <>
                                         <Link to={'/cart'}>
-                                            <button className="btn btn-outline-success" >Terminar Compra</button>
+                                            <button classNameName="btn btn-outline-success" >Terminar Compra</button>
                                         </Link>
                                         <Link to={'/'}>
-                                            <button className="btn btn-outline-primary" >Seguir Comprando</button>
+                                            <button classNameName="btn btn-outline-primary" >Seguir Comprando</button>
                                         </Link>
                                     </>
                         }
@@ -46,11 +46,14 @@
 </div>
 
 
-<div className="card" style="width:400px">
-    <img className="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
-    <div className="card-body">
-      <h4 className="card-title">John Doe</h4>
-      <p className="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" className="btn btn-primary">See Profile</a>
+<div className="row row-cols-1 row-cols-md-2 g-4">
+    <div className="col">
+      <div className="card">
+        <img src={products.image} className="card-img-top" alt="imagen de tarjeta" />
+        <div className="card-body">
+          <h5 className="card-title">{products.name}</h5>
+          <p className="card-text">{products.description}</p>
+        </div>
+      </div>
     </div>
 </div>
