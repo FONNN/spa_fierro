@@ -8,16 +8,16 @@ import { Link, NavLink } from 'react-router-dom'
 
 const NavBar = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
                 <NavLink to='/' >
                     <Navbar.Brand>
                         <img
                             alt=""
-                            src="/src/components/NavBar/logo.svg"
-                            width="30"
-                            height="30"
-                            className="d-inline-block align-top"
+                            src="/src/components/NavBar/logoInvdom.png"
+                            width="60"
+                            height="60"
+                            className="d-inline-block align-center"
                         />{' '}
                         Maderigen
                     </Navbar.Brand>

@@ -9,24 +9,16 @@ const ItemList = memo(
     ({ products }) => {
         console.log(products)
         return (
-            // <Container>
-            //     <CardGroup>
-            //         {
-            //             products?.map(product => <Item key={product.id} products={product} />)
-            //         }
-            //     </CardGroup>
-            // </Container>
-    <div className="container">
 
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-            
-                {
-                    products?.map(product => <Item key={product.id} products={product} />)
-                }
-            
-        </div>
+            <div className="container">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-    </div>
+                    {
+                        products?.map(product => <Item key={product.id} products={product} />)
+                    }
+
+                </div>
+            </div>
         )
     }
 )

@@ -36,15 +36,16 @@ const ItemListContainer = ({ greeting }) => {
         }, [])
   //*** END traer producto por id forma 2***
 
-  //*** traer producto por id forma 3***
-        // useEffect(() => {
-        //   const db = getFirestore()
-        //   const queryCollection = collection(db, 'items')
-        //   const qf = query(
-        //     queryCollection,
-        //     where('category', '==', 'shoes')
-        //   )
-        // })
+  //*** traer producto por id forma 3 (query filtrada)***
+        useEffect(() => {
+          const db = getFirestore()
+          const queryCollection = collection(db, 'items')
+          const qf = query( queryCollection, where('price', '>', 15000) )
+          getDocs(qf)
+          .then(resp => setProducts(resp.docs.map(prod => ({ id: prod.id, ...prod.data() } ))))
+          .catch( err => console.log(err) )
+          .finally(() => setLoading(false))
+        }, [])
   //*** END traer producto por id forma 3***
 
   //PRIMERA CONEXION CON BASE LOCAL task

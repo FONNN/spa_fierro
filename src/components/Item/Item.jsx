@@ -12,7 +12,7 @@ const Item = memo(
           <img src={products.image} className="card-img-top img-fluid" alt="imagen de tarjeta" />
           <div className="card-body">
             <h5 className="card-title">{products.name}</h5>
-            <p className="card-text">{products.description}</p>
+            <p className="card-text">{products.price}</p>
             <Link to={`/detail/${products.id}`}>
               <button className="btn btn-outline-dark">ver detalles</button>
             </Link>
