@@ -1,6 +1,7 @@
 import { memo } from 'react'
 import {Card, Button} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import './Item.css'
 
 
 const Item = memo(
@@ -14,7 +15,7 @@ const Item = memo(
             <h5 className="card-title">{products.name}</h5>
             <p className="card-text">{products.price}</p>
             <Link to={`/detail/${products.id}`}>
-              <button className="btn btn-outline-dark">ver detalles</button>
+              <button className="btn btn-outline-primary btn-sm">ver detalles</button>
             </Link>
           </div>
         </div>

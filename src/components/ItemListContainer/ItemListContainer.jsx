@@ -8,8 +8,10 @@ import { collection, doc, getDoc, getDocs, getFirestore, query, where } from 'fi
 
 const ItemListContainer = ({ greeting }) => {
 
-  const [products, setProducts] = useState({})
+  const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
+  const [bool, setBool] = useState(true)
+  const [product, setProduct] = useState({})
 
   //designar lo indicado en el enrutado
   const { categoryid } = useParams()
@@ -26,26 +28,28 @@ const ItemListContainer = ({ greeting }) => {
   //*** END traer producto por id forma 1***
 
   //*** traer producto por id forma 2***
-        useEffect(() => {
-          const db = getFirestore()
-          const queryCollection = collection(db, 'items')
-          getDocs(queryCollection)
-          .then(resp => setProducts( resp.docs.map(prod => ({ id: prod.id, ...prod.data() })) ))
-          .catch( err => console.log(err) )
-          .finally(() => setLoading(false))
-        }, [])
+        // useEffect(() => {
+        //   const db = getFirestore()
+        //   const queryCollection = collection(db, 'items')
+        //   getDocs(queryCollection)
+        //   .then(resp => setProducts( resp.docs.map(prod => ({ id: prod.id, ...prod.data() })) ))
+        //   .catch( err => console.log(err) )
+        //   .finally(() => setLoading(false))
+        // }, [])
   //*** END traer producto por id forma 2***
 
   //*** traer producto por id forma 3 (query filtrada)***
-        useEffect(() => {
-          const db = getFirestore()
-          const queryCollection = collection(db, 'items')
-          const qf = query( queryCollection, where('price', '>', 15000) )
-          getDocs(qf)
-          .then(resp => setProducts(resp.docs.map(prod => ({ id: prod.id, ...prod.data() } ))))
-          .catch( err => console.log(err) )
-          .finally(() => setLoading(false))
-        }, [])
+        // useEffect(() => {
+        //   const db = getFirestore()
+        //   const queryCollection = collection(db, 'items')
+        //   const qf = query(
+        //     queryCollection,
+        //     where('category', '==', 'shoes') )
+        //   getDocs(qf)
+        //   .then(resp => setProducts(resp.docs.map(prod => ({ id: prod.id, ...prod.data() } ))))
+        //   .catch( err => console.log(err) )
+        //   .finally(() => setLoading(false))
+        // }, [])
   //*** END traer producto por id forma 3***
 
   //PRIMERA CONEXION CON BASE LOCAL task
@@ -67,13 +71,36 @@ const ItemListContainer = ({ greeting }) => {
   //   console.log(`cant desde itemListContainer ${cant}`);
   // }
 
+  useEffect(() => {
+
+    if (categoryid) {
+      const db = getFirestore()
+      const queryCollection = collection(db, 'items')
+      const qf = query(
+        queryCollection,
+        where('category', '==', categoryid)
+      )
+      getDocs(qf)
+        .then(resp => setProducts(resp.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
+        .catch(err => console.log(err))
+        .finally(() => setLoading(false))
+    } else {
+      const db = getFirestore()
+      const queryCollection = collection(db, 'items')
+      getDocs(queryCollection)
+      .then(resp => setProducts( resp.docs.map(prod => ({ id: prod.id, ...prod.data() })) ))
+      .catch( err => console.log(err) )
+      .finally(() => setLoading(false))
+    }
+  }, [categoryid])
+
   return (
     <div>
       {greeting}
 
         {loading ?
           <h1>
-            <Spinner animation="grow" size="sm" variant="info" />{' '}
+            <Spinner animation="grow" size="sm" variant="primary" />{' '}
             <Spinner animation="grow" size="sm" variant="secondary" />{' '}
             <Spinner animation="grow" size="sm" variant="dark" />
           </h1>

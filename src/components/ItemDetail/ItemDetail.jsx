@@ -30,7 +30,7 @@ const ItemDetail = ({ product }) => {
                     <div className="col-md-6 border-end">
                         <div className="d-flex flex-column justify-content-center">
                             <div className="main_image">
-                                <img src={product.image} id="main_product_image" width="350" />
+                                <img src={product.image} id="main_product_image" width="475" />
                             </div>
                             <div className="thumbnail_images">
                                 <ul id="thumbnail">
