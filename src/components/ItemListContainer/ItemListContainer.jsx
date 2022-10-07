@@ -95,7 +95,7 @@ const ItemListContainer = ({ greeting }) => {
   }, [categoryid])
 
   return (
-    <div>
+    <div className='itemList__container mt-3 mb-3'>
       {greeting}
 
         {loading ?

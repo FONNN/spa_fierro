@@ -10266,6 +10266,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+:root {
+  --overlay: rgb(0, 0, 0, .7) ;
+}
+
 .App {
   text-align: center;
+  height: 100vh;
+  background-color: var(--overlay);
 }/*# sourceMappingURL=App.css.map */

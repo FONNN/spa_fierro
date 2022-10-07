@@ -1,0 +1,50 @@
+.carousel {
+  height: 100%;
+  margin: auto;
+}
+
+.carousel-item img {
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.carousel-item h3 {
+  -webkit-animation: animate 1s linear;
+          animation: animate 1s linear;
+}
+@-webkit-keyframes animate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.carousel-item p {
+  -webkit-animation: animatep 1s linear;
+          animation: animatep 1s linear;
+}
+@-webkit-keyframes animatep {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes animatep {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}/*# sourceMappingURL=HeroContent.css.map */

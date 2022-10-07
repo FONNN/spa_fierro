@@ -1,1 +1,5 @@
-/*# sourceMappingURL=ItemListContainer.css.map */
+.itemList__container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}/*# sourceMappingURL=ItemListContainer.css.map */

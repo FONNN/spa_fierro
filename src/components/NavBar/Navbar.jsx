@@ -4,13 +4,13 @@ import './Navbar.css'
 import {Container , NavDropdown, Navbar, Nav} from 'react-bootstrap'
 import Form from 'react-bootstrap/Form'
 import CartWidget from '../CartWidget/CartWidget'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
-                <NavLink to='/' >
+                <Nav.Link as={Link} to='/' >
                     <Navbar.Brand>
                         <img
                             alt=""
@@ -19,24 +19,22 @@ const NavBar = () => {
                             height="60"
                             className="d-inline-block align-center"
                         />{' '}
-                        Maderigen
+                        Inversiones Domus
                     </Navbar.Brand>
-                </NavLink>
+                </Nav.Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         {/*C07 - min1:35:00 */}
-                        <NavLink to='/category/education'>
-                            Educacion
-                        </NavLink>
-                        <NavLink to='/category/business'>
-                            Empresas
-                        </NavLink>
+                        <Nav.Link as={Link} to='/category/house'>
+                            Casas
+                        </Nav.Link>
+                        <Nav.Link as={Link} to='/category/apartment'>
+                            Departamentos
+                        </Nav.Link>
                         <NavDropdown title="Sector" id="collasible-nav-dropdown">
                             <NavDropdown.Item >Educacion</NavDropdown.Item>
-                            <NavDropdown.Item >
-                                Empresas
-                            </NavDropdown.Item>
+                            <NavDropdown.Item >Empresas</NavDropdown.Item>
                             <NavDropdown.Item >Consultas</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item >
@@ -44,9 +42,9 @@ const NavBar = () => {
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <Link to='/cart'>
+                    <NavLink to='/cart'>
                         <CartWidget />
-                    </Link>
+                    </NavLink>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

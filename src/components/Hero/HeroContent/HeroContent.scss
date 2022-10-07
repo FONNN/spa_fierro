@@ -1,0 +1,37 @@
+.carousel {
+    height: 100%;
+    margin: auto;
+}
+
+.carousel-item {
+    img {
+        height: 500px;
+        // height: 100%;
+        object-fit: contain;
+        // vertical-align: center;
+    }
+
+    h3 {
+        animation: animate 1s linear;
+    }
+    @keyframes animate {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+    p {
+        animation: animatep 1s linear;
+    }
+    @keyframes animatep {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+}
+

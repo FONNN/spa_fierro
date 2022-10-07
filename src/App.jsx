@@ -9,6 +9,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import CartWidget from './components/CartWidget/CartWidget'
 import CartContextProvider from './context/CartContext/CartContext'
 import Cart from './components/Cart/Cart'
+import Hero from './components/Hero/Hero'
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
         <div className="App">
           <NavBar />
           <Routes>
-            <Route index path='/' element={<ItemListContainer />} />
+            <Route index path='/' element={<Hero />} />
             <Route path='/category/:categoryid' element={<ItemListContainer />} />
             <Route path='/detail/:detailid' element={<ItemDetailContainer/>} />
             <Route path='/cart' element={<Cart />} />
