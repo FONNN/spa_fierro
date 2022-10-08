@@ -8,7 +8,7 @@ import { NavLink, Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
             <Container>
                 <Nav.Link as={Link} to='/' >
                     <Navbar.Brand>
@@ -33,12 +33,12 @@ const NavBar = () => {
                             Departamentos
                         </Nav.Link>
                         <NavDropdown title="Sector" id="collasible-nav-dropdown">
-                            <NavDropdown.Item >Educacion</NavDropdown.Item>
-                            <NavDropdown.Item >Empresas</NavDropdown.Item>
-                            <NavDropdown.Item >Consultas</NavDropdown.Item>
+                            <NavDropdown.Item >Proyectos</NavDropdown.Item>
+                            <NavDropdown.Item >Asesorias</NavDropdown.Item>
+                            <NavDropdown.Item >Inversiones</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item >
-                                Separated link
+                                Futuros proyectos
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>

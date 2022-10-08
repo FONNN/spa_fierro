@@ -1,12 +1,18 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 :root {
-  --overlay: rgb(0, 0, 0, .7)
+  --overlay: rgb(0, 0, 0, 0.826);
+  --second_background: rgb(210, 201, 255);
 }
 
 
 .App {
   text-align: center;
-  height: 100vh;
-  background-color: var(--overlay)
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--overlay);
+  // height: calc(100vh - 76px);
+}
+body {
+  height: 100%;
 }

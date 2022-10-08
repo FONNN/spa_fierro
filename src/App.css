@@ -10267,11 +10267,17 @@ textarea.form-control-lg {
   }
 }
 :root {
-  --overlay: rgb(0, 0, 0, .7) ;
+  --overlay: rgb(0, 0, 0, 0.826);
+  --second_background: rgb(210, 201, 255);
 }
 
 .App {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   background-color: var(--overlay);
+}
+
+body {
+  height: 100%;
 }/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,24 @@
+.infoModule__container {
+  height: calc(100vh - 92px);
+  background-color: var(--second_background);
+}
+
+.text-label,
+.text-hero-bold,
+.text-hero-regular {
+  margin: 24px 0;
+}
+
+.text-label {
+  font-size: 16px;
+  line-height: 31px;
+}
+
+.text-hero-bold {
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.side-img img {
+  width: 360px;
+}/*# sourceMappingURL=infoModule.css.map */
