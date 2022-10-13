@@ -4,7 +4,12 @@
 
     h2 {
         color: slateblue;
+        text-transform: uppercase;
         font-size: 1.875rem;
+
+        @media only screen and (min-width: 420px) {
+            font-size: 2.375rem;
+        }
     }
 
     .box {

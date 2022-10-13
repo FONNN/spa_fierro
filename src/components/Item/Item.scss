@@ -6,4 +6,8 @@ $theme-colors: (
   "success": $success
 );
 
+.card {
+  border-radius: 0.75rem !important;
+}
+
 @import "../../../node_modules/bootstrap/scss/bootstrap";

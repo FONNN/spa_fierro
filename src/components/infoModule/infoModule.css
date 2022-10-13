@@ -1,24 +1,31 @@
-.infoModule__container {
+.cl {
   height: calc(100vh - 5.75rem);
   background-color: var(--purple-background);
 }
-
-.text-label,
-.text-hero-bold,
-.text-hero-regular {
-  margin: 1.5rem 0;
+.cl .container {
+  height: 100%;
 }
-
-.text-label {
-  font-size: 1rem;
-  line-height: 1.938rem;
+.cl .container .col-lg-5 {
+  margin: auto;
 }
-
-.text-hero-bold {
-  font-size: 4rem;
-  font-weight: 500;
+.cl .intro-excerpt {
+  max-width: 28.125rem;
+  position: relative;
+  z-index: 4;
 }
-
-.side-img img {
-  width: 22.5rem;
-}/*# sourceMappingURL=InfoModule.css.map */
+.cl h2 {
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+  font-size: 1.875rem;
+}
+@media only screen and (min-width: 420px) {
+  .cl h2 {
+    font-size: 3.375rem;
+  }
+}
+.cl p {
+  margin-bottom: 1.875rem;
+}
+.cl .cl-img-wrap img {
+  border-radius: 0.75rem;
+}/*# sourceMappingURL=infoModule.css.map */

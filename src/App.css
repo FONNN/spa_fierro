@@ -10287,6 +10287,9 @@ html {
 body {
   height: 100%;
 }
+body h2, body .h2 {
+  font-size: 1.875rem;
+}
 body p {
   font-family: "Raleway", sans-serif;
 }/*# sourceMappingURL=App.css.map */

@@ -5,85 +5,55 @@ import img1 from './img/img1.jpg'
 
 const InfoModule = () => {
     return (
-        <section className='infoModule__container'>
-            <div className='row'>
-                <div className='col-mid-6'>
-                    <div className='copy'>
-                        <div className='text-label'>
-                            Changes your bussines is more better
+        // <section className='infoModule__container'>
+        //     <div className='row'>
+        //         <div className='col-mid-6'>
+        //             <div className='copy'>
+        //                 <div className='text-label'>
+        //                     Changes your bussines is more better
+        //                 </div>
+        //                 <div className='text-hero-hold'>
+        //                     Grow up your Mind in the future
+        //                 </div>
+        //                 <div className='text-hero-regular'>
+        //                     the are so many variations passages of management your mindset
+        //                 </div>
+        //             </div>
+        //         </div>
+        //         <div className='cta'>
+        //             <button type='button' className='btn btn-primary'> Boton 1</button>
+        //             <button type="button" class="btn btn-success"> Boton 2 </button>
+        //         </div>
+        //         <div className='col-mid-6 side-img'>
+        //             <img
+        //                 src={img1}
+        //             />
+        //         </div>
+        //     </div>
+        // </section>
+
+        <div className='cl'>
+            <div className='container p-5'>
+                <div className='row justify-content-between'>
+                    <div className='col-lg-5'>
+                        <div className='intro-excerpt'>
+                            <h2>
+                                Modern Interior
+                                <span className='d-block'>Studio</span>
+                            </h2>
+                            <p>
+                                Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum.
+                            </p>
                         </div>
-                        <div className='text-hero-hold'>
-                            Grow up your Mind in the future
-                        </div>
-                        <div className='text-hero-regular'>
-                            the are so many variations passages of management your mindset
+                    </div>
+                    <div className='col-lg-7'>
+                        <div className='cl-img-wrap'>
+                            <img className='img-fluid' src={img1} />
                         </div>
                     </div>
                 </div>
-                <div className='cta'>
-                    <button type='button' className='btn btn-primary'> Boton 1</button>
-                    <button type="button" class="btn btn-secondary"> Boton 2 </button>
-                </div>
-                <div className='col-mid-6 side-img'>
-                    <img
-                        src={img1}
-                    />
-                </div>
             </div>
-        </section>
-
-        // <div className='team text-center p-5'>
-        //     <div className='container pb-3 pt-5'>
-        //         <h2 className='fw-bold'>Conoce al Equipo</h2>
-        //         <p className='text-black-50 mb-5'>Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum </p>
-        //     </div>
-        //     <div className='row'>
-        //         <div className='col-md-6 col-lg-3 d-flex align-items-stretch'>
-        //             <div className='card box bg-light mb-3'>
-        //                 <img
-        //                     className='card-img-top'
-        //                     src='https://placeimg.com/640/480/any'
-        //                     alt='foto tarjeta'
-        //                 />
-        //                 <h4 className='p-3 text-light'>Luke Skywalker</h4>
-        //                 <blockquote className='text-black-50 p-3'>"Tu presunción es tu debilidad."</blockquote>
-        //             </div>
-        //         </div>
-        //         <div className='col-md-6 col-lg-3 d-flex align-items-stretch'>
-        //             <div className='card box bg-light mb-3'>
-        //                 <img
-        //                     className='card-img-top'
-        //                     src='https://placeimg.com/640/480/any'
-        //                     alt='foto tarjeta'
-        //                 />
-        //                 <h4 className='p-3 text-light'>Princess Leia</h4>
-        //                 <blockquote className='text-black-50 p-3'>"Aren't you a little short for a stormtrooper?"</blockquote>
-        //             </div>
-        //         </div>
-        //         <div className='col-md-6 col-lg-3 d-flex align-items-stretch'>
-        //             <div className='card box bg-light mb-3'>
-        //                 <img
-        //                     className='card-img-top'
-        //                     src='https://placeimg.com/640/480/any'
-        //                     alt='foto tarjeta'
-        //                 />
-        //                 <h4 className='p-3 text-light'>Han Solo</h4>
-        //                 <blockquote className='text-black-50 p-3'>"It's not wise to upset a Wookie."</blockquote>
-        //             </div>
-        //         </div>
-        //         <div className='col-md-6 col-lg-3 d-flex align-items-stretch'>
-        //             <div className='card box bg-light mb-3'>
-        //                 <img
-        //                     className='card-img-top'
-        //                     src='https://placeimg.com/640/480/any'
-        //                     alt='foto tarjeta'
-        //                 />
-        //                 <h4 className='p-3 text-light'>R2D2</h4>
-        //                 <blockquote className='text-black-50 p-3'>0 0 0 1 1 0 1 1 0 1 0 0.</blockquote>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
+        </div>
     )
 }
 

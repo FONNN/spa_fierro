@@ -1,1 +1,6 @@
-/*# sourceMappingURL=ItemDetailContainer.css.map */
+.itemDetailContainer {
+  min-height: 100vh;
+}
+.itemDetailContainer h2 {
+  color: slateblue;
+}/*# sourceMappingURL=ItemDetailContainer.css.map */

@@ -1,55 +1,70 @@
-.infoModule__container {
-    height: calc(100vh - 5.75rem);
-    background-color: var(--purple-background);
-}
+// .infoModule__container {
+//     height: calc(100vh - 5.75rem);
+//     background-color: var(--purple-background);
+// }
 
-.text-label,
-.text-hero-bold,
-.text-hero-regular {
-    margin: 1.5rem 0;
-}
+// .text-label,
+// .text-hero-bold,
+// .text-hero-regular {
+//     margin: 1.5rem 0;
+// }
 
-.text-label {
-    font-size: 1rem;
-    line-height: 1.938rem;
-}
+// .text-label {
+//     font-size: 1rem;
+//     line-height: 1.938rem;
+// }
 
-.text-hero-bold {
-    font-size: 4rem;
-    font-weight: 500;
-}
+// .text-hero-bold {
+//     font-size: 4rem;
+//     font-weight: 500;
+// }
 
-.text-hero-regular {
-    //
-}
+// .text-hero-regular {
+//     //
+// }
 
 
-.side-img {
-    // padding: 0;
+// .side-img {
+//     // padding: 0;
 
-    img {
-        width: 22.5rem;
-    }
-}
-
-// .team {
-//     min-height: 100vh;
-//     width: 100%;
-//     background-color: var(--white-background);
-
-//     h2 {
-//         color: slateblue;
-//         font-size: 1.875rem;
-//     }
-
-//     .box {
-//         border-radius: 0.75rem;
-
-//         h4 {
-//             background-color: var(--purple-background);
-//         }
-//         blockquote {
-//             font-family: 'Raleway', sans-serif;
-//         }
+//     img {
+//         width: 22.5rem;
 //     }
 // }
+
+.cl {
+    height: calc(100vh - 5.75rem);
+    background-color: var(--purple-background);
+
+    .container {
+        height: 100%;
+
+        .col-lg-5 {
+            margin: auto;
+        }
+    }
+
+    .intro-excerpt {
+        max-width: 28.125rem;
+        position: relative;
+        z-index: 4;
+    }
+    h2 {
+        font-weight: 700;
+        margin-bottom: 1.875rem;
+        font-size: 1.875rem;
+
+        @media only screen and (min-width: 420px) {
+            font-size: 3.375rem;
+        }
+    }
+    p {
+        margin-bottom: 1.875rem;
+    }
+
+    .cl-img-wrap {
+        img {
+            border-radius: 0.75rem;
+        }
+    }
+}
