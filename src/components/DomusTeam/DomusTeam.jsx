@@ -5,7 +5,7 @@ const DomusTeam = () => {
         <div className='team text-center p-5'>
             <div className='container pb-3'>
                 <h2 className='fw-bold'>Conoce al Equipo</h2>
-                <p className='text-black-50 mb-5'>Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum </p>
+                <p className='text-white mb-5'>Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum </p>
             </div>
             <div className='row'>
                 <div className='col-md-6 col-lg-3 d-flex align-items-stretch'>

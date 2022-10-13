@@ -1,5 +1,5 @@
 .itemList__container {
-  height: 100vh;
+  min-height: 100vh !important;
+  height: 100%;
   width: 100%;
-  position: relative;
 }/*# sourceMappingURL=ItemListContainer.css.map */
