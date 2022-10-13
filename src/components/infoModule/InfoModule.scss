@@ -1,22 +1,21 @@
 .infoModule__container {
-    // height: 100vh;
-    height: calc(100vh - 92px);
-    background-color: var(--second_background);
+    height: calc(100vh - 5.75rem);
+    background-color: var(--purple-background);
 }
 
 .text-label,
 .text-hero-bold,
 .text-hero-regular {
-    margin: 24px 0;
+    margin: 1.5rem 0;
 }
 
 .text-label {
-    font-size: 16px;
-    line-height: 31px;
+    font-size: 1rem;
+    line-height: 1.938rem;
 }
 
 .text-hero-bold {
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 500;
 }
 
@@ -24,6 +23,33 @@
     //
 }
 
-.side-img img{
-    width: 360px;
+
+.side-img {
+    // padding: 0;
+
+    img {
+        width: 22.5rem;
+    }
 }
+
+// .team {
+//     min-height: 100vh;
+//     width: 100%;
+//     background-color: var(--white-background);
+
+//     h2 {
+//         color: slateblue;
+//         font-size: 1.875rem;
+//     }
+
+//     .box {
+//         border-radius: 0.75rem;
+
+//         h4 {
+//             background-color: var(--purple-background);
+//         }
+//         blockquote {
+//             font-family: 'Raleway', sans-serif;
+//         }
+//     }
+// }

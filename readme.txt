@@ -1,0 +1,1 @@
+- Cada elemento nuevo o seccion debe ser integrado con etiqueta <section>. en app.scss para que cada seccion tenga un alto de 100vh menos la barra de navegacion {height: calc(100vh - 92px)}.

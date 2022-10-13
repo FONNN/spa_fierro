@@ -1,16 +1,15 @@
-.hero__container {
-  height: 100vh;
-  max-height: 100%;
+.hero {
+  height: calc(100vh - 5.75rem);
+  margin: auto;
 }
 
 .carousel {
-  height: 80%;
-  margin: auto;
+  height: 100%;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  height: 160px;
+  height: 10rem;
   display: none;
 }
 
@@ -21,17 +20,19 @@
   padding-top: 1.25rem;
   margin: auto;
   text-align: center;
-  width: 50%;
+  width: 40%;
+  /* glassmorphism */
+  background: rgba(40, 39, 39, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
-.carousel-item {
-  height: 80vh;
-}
 .carousel-item img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 37.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .carousel-item h3 {
   -webkit-animation: animate 1s linear;

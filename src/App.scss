@@ -1,18 +1,28 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
 :root {
   --overlay: rgb(0, 0, 0, 0.826);
-  --second_background: rgb(210, 201, 255);
+  --purple-background: rgb(210, 201, 255);
+  --white-background: rgb(255, 255, 255);
 }
 
 
 .App {
   text-align: center;
+  // min-height: 100vh;
   min-height: 100vh;
-  height: 100%;
   background-color: var(--overlay);
-  // height: calc(100vh - 76px);
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   height: 100%;
+
+  p {
+    font-family: 'Raleway', sans-serif;
+  }
 }

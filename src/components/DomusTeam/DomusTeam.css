@@ -1,0 +1,18 @@
+.team {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--white-background);
+}
+.team h2 {
+  color: slateblue;
+  font-size: 1.875rem;
+}
+.team .box {
+  border-radius: 0.75rem;
+}
+.team .box h4 {
+  background-color: var(--purple-background);
+}
+.team .box blockquote {
+  font-family: "Raleway", sans-serif;
+}/*# sourceMappingURL=DomusTeam.css.map */

@@ -1,14 +1,13 @@
 // import styled from 'styled-components'
 import './Navbar.css'
+import CartWidget from '../CartWidget/CartWidget'
 // react-bootstrap
 import {Container , NavDropdown, Navbar, Nav} from 'react-bootstrap'
-import Form from 'react-bootstrap/Form'
-import CartWidget from '../CartWidget/CartWidget'
 import { NavLink, Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky='top'>
             <Container>
                 <Nav.Link as={Link} to='/' >
                     <Navbar.Brand>
@@ -31,6 +30,9 @@ const NavBar = () => {
                         </Nav.Link>
                         <Nav.Link as={Link} to='/category/apartment'>
                             Departamentos
+                        </Nav.Link>
+                        <Nav.Link as={Link} to='/team'>
+                            Nosotros
                         </Nav.Link>
                         <NavDropdown title="Sector" id="collasible-nav-dropdown">
                             <NavDropdown.Item >Proyectos</NavDropdown.Item>

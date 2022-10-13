@@ -5,7 +5,7 @@ import InfoModule from '../infoModule/infoModule'
 
 const Hero = () => {
     return (
-        <section className='section__hero mb-3 mt-3'>
+        <section className='section__hero'>
                 <HeroContent />
                 <InfoModule />
         </section>

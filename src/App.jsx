@@ -10,6 +10,7 @@ import CartWidget from './components/CartWidget/CartWidget'
 import CartContextProvider from './context/CartContext/CartContext'
 import Cart from './components/Cart/Cart'
 import Hero from './components/Hero/Hero'
+import DomusTeam from './components/DomusTeam/DomusTeam'
 
 
 function App() {
@@ -23,8 +24,9 @@ function App() {
           <NavBar />
           <Routes>
             <Route index path='/' element={<Hero />} />
-            <Route path='/category/:categoryid' element={<ItemListContainer />} />
-            <Route path='/detail/:detailid' element={<ItemDetailContainer/>} />
+            <Route path='/category/:categoryid' element={ <ItemListContainer/> } />
+            <Route path='/detail/:detailid' element={ <ItemDetailContainer/> } />
+            <Route path='/team' element={ <DomusTeam/> } />
             <Route path='/cart' element={<Cart />} />
             {/* <Route path='/notfound' element={<NotFound />} /> */}
 

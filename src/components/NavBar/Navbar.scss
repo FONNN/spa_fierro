@@ -1,1 +1,5 @@
 
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+    border-top: 0.1875rem solid blue;
+}

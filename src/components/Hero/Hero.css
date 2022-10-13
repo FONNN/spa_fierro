@@ -1,3 +1,4 @@
 .section__hero {
-  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
 }/*# sourceMappingURL=Hero.css.map */

@@ -1,38 +1,40 @@
-.hero__container {
-    height: 100vh;
-    max-height: 100%;
+.hero {
+    // min-height: 100vh;
+    height: calc(100vh - 5.75rem);
+    margin: auto;
 }
 
 .carousel {
-    height: 80%;
-    margin: auto;
-    // margin: auto;
+    height: 100%;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    height: 160px;
+    height: 10rem;
     display: none;
 }
 
 .carousel-caption {
-    // position: relative;
     left: 0;
     right: 0;
     bottom: 1.25rem;
     padding-top: 1.25rem;
     margin: auto;
     text-align: center;
-    width: 50%;
+    width: 40%;
+    /* glassmorphism */
+    background: rgba(40, 39, 39, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .carousel-item {
-    height: 80vh;
+    // height: 80vh;
     img {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        // vertical-align: center;
+        height: 37.5rem;
+        object-fit: cover;
     }
     h3 {
         animation: animate 1s linear;
@@ -61,5 +63,9 @@
             transform: translateX(0%);
         }
     }
+}
+
+@media only screen and (min-width: 420px) {
+    //
 }
 
