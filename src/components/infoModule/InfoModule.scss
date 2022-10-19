@@ -33,7 +33,8 @@
 // }
 
 .cl {
-    height: calc(100vh - 5.75rem);
+    min-height: 100vh;
+    // height: calc(100vh - 5.75rem);
     background-color: var(--purple-background);
 
     .container {

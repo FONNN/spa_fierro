@@ -1,11 +1,14 @@
-.hero {
-    // min-height: 100vh;
-    height: calc(100vh - 5.75rem);
-    margin: auto;
+.container_hero {
+    min-height: 100vh;
+    // height: calc(100vh - 5.75rem);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
 }
 
 .carousel {
     height: 100%;
+    width: 100vw;
 }
 
 .carousel-control-prev,
@@ -31,9 +34,12 @@
 }
 
 .carousel-item {
-    // height: 80vh;
+    width: 100%;
+    height: 100vh;
     img {
-        height: 37.5rem;
+        height: 100%;
+        width: 100%;
+        object-position: center;
         object-fit: cover;
     }
     h3 {

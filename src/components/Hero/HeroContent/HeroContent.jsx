@@ -9,9 +9,9 @@ import slide4 from '../images/slide4.jpg'
 const HeroContent = () => {
     return (
         <section>
-            <Container className='section__container hero'>
-                <Carousel>
-                    <Carousel.Item className="w-100">
+            <Container className='container_hero'>
+                <Carousel fade pause={false}>
+                    <Carousel.Item className="w-100" interval={3000}>
                         <img
                             className="d-block w-100"
                             src={slide4}
@@ -22,7 +22,7 @@ const HeroContent = () => {
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100">
+                    <Carousel.Item className="w-100" interval={2000}>
                         <img
                             className="d-block w-100"
                             src={slide2}
@@ -33,14 +33,13 @@ const HeroContent = () => {
                         <Carousel.Caption>
                             <h3>proyectos</h3>
                             <p>Descubre el proyecto a tu medida</p>
-                            <button className="btn btn-primary mb-3">- Ver Más -</button>
+                            <button className="btn btn-primary mb-3"> Ver Más </button>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100">
+                    <Carousel.Item className="w-100" interval={2000}>
                         <img
                             className="d-block w-100"
                             src={slide3}
-                            // style={{ height: 100 }}
                             alt="Third slide"
                         />
                         <Carousel.Caption>
@@ -50,7 +49,7 @@ const HeroContent = () => {
                             </p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100">
+                    <Carousel.Item className="w-100" interval={2000}>
                         <img
                             className="d-block w-100"
                             src={slide1}

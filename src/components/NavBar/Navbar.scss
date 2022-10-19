@@ -1,5 +1,14 @@
 
-.navbar-nav > li > a.active,
-.navbar-nav > li > a.active:focus {
-    border-top: 0.1875rem solid blue;
+.navbar {
+    /* glassmorphism */
+    background: rgba(238, 231, 231, 0.1);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    color: black;
+}
+
+.navbar-bg {
+    background: rgba(255, 255, 255, 0.9);
 }

@@ -1,6 +1,6 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap');
 
 :root {
   --overlay: rgb(0, 0, 0, 0.826);
@@ -14,7 +14,7 @@
   // min-height: 100vh;
   min-height: 100vh;
   background-color: var(--overlay);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 html {
   scroll-behavior: smooth;
@@ -22,11 +22,11 @@ html {
 body {
   height: 100%;
 
-h2 {
-  font-size: 1.875rem;
-}
+  h2 {
+    font-size: 1.875rem;
+  }
 
-  p {
-    font-family: 'Raleway', sans-serif;
+  button,  p {
+      font-family: 'Roboto', sans-serif;
   }
 }

@@ -4,21 +4,34 @@ import CartWidget from '../CartWidget/CartWidget'
 // react-bootstrap
 import {Container , NavDropdown, Navbar, Nav} from 'react-bootstrap'
 import { NavLink, Link } from 'react-router-dom'
+import logo from './img/logo_Domus2.png'
+import { useState } from 'react'
 
 const NavBar = () => {
+
+    //change color on scroll
+    const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY >= 50) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+    }
+
+    window.addEventListener = ('scroll', changeColor)
+
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky='top'>
+        <Navbar className={color ? 'navbar navbar-bg' : 'navbar'} collapseOnSelect expand="lg" variant="light" fixed='top' >
             <Container>
                 <Nav.Link as={Link} to='/' >
                     <Navbar.Brand>
                         <img
-                            alt=""
-                            src="/src/components/NavBar/logoInvdom.png"
-                            width="60"
-                            height="60"
+                            alt="imagen de logo"
+                            src={logo}
+                            width="150"
                             className="d-inline-block align-center"
-                        />{' '}
-                        Inversiones Domus
+                        />
                     </Navbar.Brand>
                 </Nav.Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -35,7 +48,7 @@ const NavBar = () => {
                             Nosotros
                         </Nav.Link>
                         <NavDropdown title="Sector" id="collasible-nav-dropdown">
-                            <NavDropdown.Item >Proyectos</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to='/products'>Proyectos</NavDropdown.Item>
                             <NavDropdown.Item >Asesorias</NavDropdown.Item>
                             <NavDropdown.Item >Inversiones</NavDropdown.Item>
                             <NavDropdown.Divider />

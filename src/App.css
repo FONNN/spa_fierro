@@ -5,7 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10277,7 +10277,7 @@ textarea.form-control-lg {
   text-align: center;
   min-height: 100vh;
   background-color: var(--overlay);
-  font-family: "Roboto", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 html {
@@ -10290,6 +10290,6 @@ body {
 body h2, body .h2 {
   font-size: 1.875rem;
 }
-body p {
-  font-family: "Raleway", sans-serif;
+body button, body p {
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=App.css.map */
