@@ -2,7 +2,7 @@
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
 // react-bootstrap
-import {Container , NavDropdown, Navbar, Nav} from 'react-bootstrap'
+import {Container , NavDropdown, Navbar, Nav, Button} from 'react-bootstrap'
 import { NavLink, Link } from 'react-router-dom'
 import logo from './img/logo_Domus2.png'
 import { useState } from 'react'
@@ -22,14 +22,14 @@ const NavBar = () => {
     window.addEventListener = ('scroll', changeColor)
 
     return (
-        <Navbar className={color ? 'navbar navbar-bg' : 'navbar'} collapseOnSelect expand="lg" variant="light" fixed='top' >
+        <Navbar className={color ? 'navbar navbar-bg fs-5' : 'navbar fs-5'} collapseOnSelect expand="lg" variant="light" fixed='top' >
             <Container>
                 <Nav.Link as={Link} to='/' >
                     <Navbar.Brand>
                         <img
                             alt="imagen de logo"
                             src={logo}
-                            width="150"
+                            width="180"
                             className="d-inline-block align-center"
                         />
                     </Navbar.Brand>
@@ -57,8 +57,8 @@ const NavBar = () => {
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <NavLink to='/cart'>
-                        <CartWidget />
+                    <NavLink as={Link} to="/products">
+                        <Button variant='secondary'>Contáctanos</Button>
                     </NavLink>
                 </Navbar.Collapse>
             </Container>

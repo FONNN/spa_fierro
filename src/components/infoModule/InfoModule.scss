@@ -1,44 +1,15 @@
-// .infoModule__container {
-//     height: calc(100vh - 5.75rem);
-//     background-color: var(--purple-background);
-// }
-
-// .text-label,
-// .text-hero-bold,
-// .text-hero-regular {
-//     margin: 1.5rem 0;
-// }
-
-// .text-label {
-//     font-size: 1rem;
-//     line-height: 1.938rem;
-// }
-
-// .text-hero-bold {
-//     font-size: 4rem;
-//     font-weight: 500;
-// }
-
-// .text-hero-regular {
-//     //
-// }
-
-
-// .side-img {
-//     // padding: 0;
-
-//     img {
-//         width: 22.5rem;
-//     }
-// }
-
 .cl {
     min-height: 100vh;
     // height: calc(100vh - 5.75rem);
-    background-color: var(--purple-background);
+    background-color: var(--pastel-background);
 
     .container {
         height: 100%;
+        margin: auto;
+
+        .row {
+            margin-top: 10rem;
+        }
 
         .col-lg-5 {
             margin: auto;

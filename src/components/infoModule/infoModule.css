@@ -1,9 +1,13 @@
 .cl {
   min-height: 100vh;
-  background-color: var(--purple-background);
+  background-color: var(--pastel-background);
 }
 .cl .container {
   height: 100%;
+  margin: auto;
+}
+.cl .container .row {
+  margin-top: 10rem;
 }
 .cl .container .col-lg-5 {
   margin: auto;

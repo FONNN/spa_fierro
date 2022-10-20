@@ -1,12 +1,21 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap');
 
 :root {
   --overlay: rgb(0, 0, 0, 0.826);
-  --purple-background: rgb(210, 201, 255);
+  --pastel-background: #70A9A1;
   --white-background: rgb(255, 255, 255);
 }
+
+$primary: #6610f2;
+$success: #70A9A1;
+
+$theme-colors: (
+  "primary": $primary,
+  "success": $success
+);
 
 
 .App {

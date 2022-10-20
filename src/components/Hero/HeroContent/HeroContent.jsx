@@ -22,7 +22,7 @@ const HeroContent = () => {
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100" interval={2000}>
+                    <Carousel.Item className="w-100">
                         <img
                             className="d-block w-100"
                             src={slide2}
@@ -33,10 +33,10 @@ const HeroContent = () => {
                         <Carousel.Caption>
                             <h3>proyectos</h3>
                             <p>Descubre el proyecto a tu medida</p>
-                            <button className="btn btn-primary mb-3"> Ver Más </button>
+                            <button className="btn btn-success mb-3"> Ver Más </button>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100" interval={2000}>
+                    <Carousel.Item className="w-100">
                         <img
                             className="d-block w-100"
                             src={slide3}
@@ -44,12 +44,10 @@ const HeroContent = () => {
                         />
                         <Carousel.Caption>
                             <h3>Asesoría</h3>
-                            <p>
-                                Te acompanamos en todo el proceso de compra.
-                            </p>
+                            <p>Te acompanamos en todo el proceso de compra.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item className="w-100" interval={2000}>
+                    <Carousel.Item className="w-100">
                         <img
                             className="d-block w-100"
                             src={slide1}
@@ -60,7 +58,7 @@ const HeroContent = () => {
                         <Carousel.Caption>
                             <h3>inversionistas</h3>
                             <p>
-                                Obtenemos la mejor plusvalia a tus proyectos.
+                                Te asesoramos cómo realizar tu inversión de manera exitosa.
                             </p>
                         </Carousel.Caption>
                     </Carousel.Item>

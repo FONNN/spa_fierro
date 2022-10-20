@@ -1,9 +1,13 @@
 .team {
   min-height: 100vh;
   width: 100%;
+  background-color: whitesmoke;
+}
+.team .container {
+  margin-top: 5rem;
 }
 .team h2 {
-  color: slateblue;
+  color: var(--pastel-background);
   text-transform: uppercase;
   font-size: 1.875rem;
 }
@@ -11,6 +15,12 @@
   .team h2 {
     font-size: 2.375rem;
   }
+}
+.team h4 {
+  color: slateblue !important;
+}
+.team p {
+  color: black !important;
 }
 .team .box {
   border-radius: 0.75rem;

@@ -1,13 +1,13 @@
-$primary: #6610f2;
-$success: #20c997;
+// $primary: #6610f2;
+// $success: #20c997;
 
-$theme-colors: (
-  "primary": $primary,
-  "success": $success
-);
+// $theme-colors: (
+//   "primary": $primary,
+//   "success": $success
+// );
 
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 .card {
   border-radius: 0.75rem !important;
 }
-
-@import "../../../node_modules/bootstrap/scss/bootstrap";
