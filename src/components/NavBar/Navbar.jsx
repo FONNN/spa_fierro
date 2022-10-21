@@ -12,7 +12,7 @@ const NavBar = () => {
     //change color on scroll
     const [color, setColor] = useState(false)
     const changeColor = () => {
-        if (window.scrollY >= 50) {
+        if (window.scrollY >= 20) {
             setColor(true)
         } else {
             setColor(false)
@@ -57,9 +57,9 @@ const NavBar = () => {
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <NavLink as={Link} to="/products">
-                        <Button variant='secondary'>Contáctanos</Button>
-                    </NavLink>
+                    <Nav>
+                        <Button as={Link} to="/formulary" variant='dark'>Contáctanos</Button>
+                    </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

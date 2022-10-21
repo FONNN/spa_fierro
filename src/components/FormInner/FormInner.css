@@ -1,0 +1,18 @@
+.bForm {
+  background-color: rgba(245, 245, 245, 0.951);
+  color: black;
+  max-width: 700px;
+  margin: auto;
+}
+.bForm span {
+  color: #d23200 !important;
+}
+.bForm .btn {
+  margin: auto;
+}
+
+@media only screen and (min-width: 420px) {
+  .form_container {
+    padding-top: 8rem;
+  }
+}/*# sourceMappingURL=FormInner.css.map */

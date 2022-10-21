@@ -1,0 +1,28 @@
+.container {
+  height: 100%;
+}
+.container .row {
+  margin-top: 8rem;
+}
+.container .row .col-lg-5 {
+  margin: auto;
+}
+.container .row .col-lg-5 .title_text {
+  max-width: 28.125rem;
+  position: relative;
+  z-index: 4;
+}
+.container .row .col-lg-5 .title_text h2 {
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+  font-size: 1.875rem;
+}
+@media only screen and (min-width: 420px) {
+  .container .row .col-lg-5 .title_text h2 {
+    font-size: 3.375rem;
+  }
+}
+.container .row .col-lg-5 .title_text p {
+  margin-bottom: 1.875rem;
+  color: white;
+}/*# sourceMappingURL=Formulary_content.css.map */

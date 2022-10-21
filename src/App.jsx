@@ -11,6 +11,7 @@ import CartContextProvider from './context/CartContext/CartContext'
 import Cart from './components/Cart/Cart'
 import Hero from './components/Hero/Hero'
 import DomusTeam from './components/DomusTeam/DomusTeam'
+import Formulary from './components/Formulary/Formulary'
 
 
 function App() {
@@ -27,8 +28,9 @@ function App() {
             <Route path='/category/:categoryid' element={ <ItemListContainer/> } />
             <Route path='/detail/:detailid' element={ <ItemDetailContainer/> } />
             <Route path='/team' element={ <DomusTeam/> } />
-            <Route path='/products' element={ <ItemListContainer/> }/>
+            <Route path='/products' element={ <ItemListContainer/> } />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/formulary' element={ <Formulary/> } />
             {/* <Route path='/notfound' element={<NotFound />} /> */}
 
             {/*'para notFound'*/}

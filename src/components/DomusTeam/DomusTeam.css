@@ -1,32 +1,27 @@
 .team {
   min-height: 100vh;
   width: 100%;
-  background-color: whitesmoke;
 }
 .team .container {
   margin-top: 5rem;
 }
-.team h2 {
-  color: var(--pastel-background);
-  text-transform: uppercase;
-  font-size: 1.875rem;
+.team .card {
+  box-shadow: 0.625rem 0.313rem 0.313rem rgba(122, 122, 122, 0.38);
 }
-@media only screen and (min-width: 420px) {
-  .team h2 {
-    font-size: 2.375rem;
-  }
+.team h2 {
+  color: var(--green-color);
 }
 .team h4 {
-  color: slateblue !important;
+  color: #fff !important;
 }
 .team p {
-  color: black !important;
+  color: #000 !important;
 }
 .team .box {
   border-radius: 0.75rem;
 }
 .team .box h4 {
-  background-color: var(--purple-background);
+  background-color: var(--pastel-background) !important;
 }
 .team .box blockquote {
   font-family: "Raleway", sans-serif;

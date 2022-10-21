@@ -10270,13 +10270,15 @@ textarea.form-control-lg {
 :root {
   --overlay: rgb(0, 0, 0, 0.826);
   --pastel-background: #70A9A1;
+  --green-color: #3c6e71;
+  --dark-gray: #d9d9d9;
   --white-background: rgb(255, 255, 255);
 }
 
 .App {
   text-align: center;
   min-height: 100vh;
-  background-color: var(--overlay);
+  background-color: var(--dark-gray);
   font-family: "Playfair Display", serif;
 }
 
@@ -10288,7 +10290,13 @@ body {
   height: 100%;
 }
 body h2, body .h2 {
+  font-weight: 700;
   font-size: 1.875rem;
+}
+@media only screen and (min-width: 420px) {
+  body h2, body .h2 {
+    font-size: 3.375rem;
+  }
 }
 body button, body p {
   font-family: "Roboto", sans-serif;
