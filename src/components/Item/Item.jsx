@@ -12,9 +12,9 @@ const Item = memo(
           <img src={products.image} className="card-img-top" alt="imagen de tarjeta" />
           <div className="card-body">
             <h5 className="card-title">{products.name}</h5>
-            <p className="card-text">{products.price}</p>
+            <p className="card-text p_item">{products.price}</p>
             <Link to={`/detail/${products.id}`}>
-              <button className="btn btn-success btn-sm">ver detalles</button>
+              <button className="btn btn-success">ver detalles</button>
             </Link>
           </div>
         </div>

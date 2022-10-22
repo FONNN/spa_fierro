@@ -8,9 +8,6 @@
 .team .card {
   box-shadow: 0.625rem 0.313rem 0.313rem rgba(122, 122, 122, 0.38);
 }
-.team h2 {
-  color: var(--green-color);
-}
 .team h4 {
   color: #fff !important;
 }
@@ -21,7 +18,7 @@
   border-radius: 0.75rem;
 }
 .team .box h4 {
-  background-color: var(--pastel-background) !important;
+  background-color: var(--green-color) !important;
 }
 .team .box blockquote {
   font-family: "Raleway", sans-serif;

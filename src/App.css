@@ -10278,7 +10278,7 @@ textarea.form-control-lg {
 .App {
   text-align: center;
   min-height: 100vh;
-  background-color: var(--dark-gray);
+  background-color: var(--pastel-background);
   font-family: "Playfair Display", serif;
 }
 

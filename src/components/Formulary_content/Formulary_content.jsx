@@ -1,5 +1,4 @@
 import './Formulary_content.css'
-import temporal from '../infoModule/img/img1.jpg'
 import FormInner from '../FormInner/FormInner'
 
 const Formulary_content = () => {

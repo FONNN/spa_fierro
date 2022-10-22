@@ -10268,4 +10268,7 @@ textarea.form-control-lg {
 }
 .card {
   border-radius: 0.75rem !important;
+}
+.card .p_item {
+  color: rgb(37, 37, 37);
 }/*# sourceMappingURL=Item.css.map */

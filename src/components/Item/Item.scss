@@ -10,4 +10,8 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 .card {
   border-radius: 0.75rem !important;
+
+  .p_item {
+    color: rgb(37, 37, 37);
+  }
 }

@@ -10,10 +10,9 @@
         box-shadow: 0.625rem 0.313rem 0.313rem rgba(122, 122, 122, 0.38);
     }
 
-    h2 {
-        color: var(--green-color);
-        // margin-bottom: 1.875rem;
-    }
+    // h2 {
+    //     color: var(--green-color);
+    // }
 
     h4 {
         color: #fff !important;
@@ -27,7 +26,7 @@
         border-radius: 0.75rem;
 
         h4 {
-            background-color: var(--pastel-background) !important;
+            background-color: var(--green-color) !important;
         }
         blockquote {
             font-family: 'Raleway', sans-serif;

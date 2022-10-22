@@ -5,7 +5,7 @@ import Item from '../Item/Item';
 
 const ItemList = memo(
     ({ products }) => {
-        console.log(products)
+        // console.log(products)
         return (
 
             <div className="item__container m-3">
