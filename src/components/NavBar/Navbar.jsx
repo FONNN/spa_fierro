@@ -3,7 +3,7 @@ import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
 // react-bootstrap
 import {Container , NavDropdown, Navbar, Nav, Button} from 'react-bootstrap'
-import { NavLink, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import logo from './img/logo_Domus2.png'
 import { useState } from 'react'
 

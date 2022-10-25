@@ -8,7 +8,7 @@ const Item = memo(
     return (
 
       <div className="col d-flex align-items-stretch">
-        <div className="card h-100 align-items-stretch">
+        <div className="card h-100">
           <img src={products.image} className="card-img-top" alt="imagen de tarjeta" />
           <div className="card-body">
             <h5 className="card-title">{products.name}</h5>

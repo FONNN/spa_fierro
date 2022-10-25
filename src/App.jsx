@@ -12,6 +12,7 @@ import Cart from './components/Cart/Cart'
 import Hero from './components/Hero/Hero'
 import DomusTeam from './components/DomusTeam/DomusTeam'
 import Formulary from './components/Formulary/Formulary'
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
             {/*'para notFound'*/}
             <Route path='*' element={<Navigate to='/'/>} />
           </Routes>
+          <Footer />
         </div>
       </CartContextProvider>
     </BrowserRouter>

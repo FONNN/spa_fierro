@@ -95,14 +95,12 @@ const ItemListContainer = ({ greeting }) => {
   }, [categoryid])
 
   return (
-    <div className='itemList__container text-center p-3'>
-      {greeting}
-
+    <div className='itemList__container text-center p-5'>
         {loading ?
           <h1>
-            <Spinner animation="grow" size="sm" variant="primary" />{' '}
-            <Spinner animation="grow" size="sm" variant="secondary" />{' '}
-            <Spinner animation="grow" size="sm" variant="dark" />
+            <Spinner animation="grow" size="md" variant="success" />{' '}
+            <Spinner animation="grow" size="md" variant="light" />{' '}
+            <Spinner animation="grow" size="md" variant="dark" />
           </h1>
           :
           <ItemList products={products}/>
