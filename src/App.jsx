@@ -13,6 +13,7 @@ import Hero from './components/Hero/Hero'
 import DomusTeam from './components/DomusTeam/DomusTeam'
 import Formulary from './components/Formulary/Formulary'
 import Footer from './components/Footer/Footer'
+import HeroContent from './components/Hero/HeroContent/HeroContent'
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
         <div className="App">
           <NavBar />
           <Routes>
-            <Route index path='/' element={<Hero />} />
+            <Route index path='/' element={ <Hero/> } />
             <Route path='/category/:categoryid' element={ <ItemListContainer/> } />
             <Route path='/detail/:detailid' element={ <ItemDetailContainer/> } />
             <Route path='/team' element={ <DomusTeam/> } />
