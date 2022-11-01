@@ -12,7 +12,7 @@ const NavBar = () => {
     //change color on scroll
     const [color, setColor] = useState(false)
     const changeColor = () => {
-        if (window.scrollY >= 20) {
+        if (window.scrollY >= 30) {
             setColor(true)
         } else {
             setColor(false)
@@ -38,10 +38,10 @@ const NavBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         {/*C07 - min1:35:00 */}
-                        <Nav.Link as={Link} to='/category/house'>
+                        <Nav.Link as={Link} to='/category/Casas'>
                             Casas
                         </Nav.Link>
-                        <Nav.Link as={Link} to='/category/apartment'>
+                        <Nav.Link as={Link} to='/category/Departamentos'>
                             Departamentos
                         </Nav.Link>
                         <Nav.Link as={Link} to='/team'>

@@ -24,33 +24,34 @@ const ItemDetail = ({ product }) => {
 
     return (
 
-        <div className="container mt-5">
-            <div className="card">
-                <div className="row g-0">
+        <div className="container pt-5 mt-5 mb-5">
+            <h2>Detalle</h2>
+            <div className="card h-100">
+                <div className="row m-3">
                     <div className="col-md-6 border-end">
                         <div className="d-flex flex-column justify-content-center">
                             <div className="main_image">
-                                <img src={product.image} id="main_product_image" width="475" />
+                                <img src={product.image} className='card-img-top' id="main_product_image" width="475" />
                             </div>
                             <div className="thumbnail_images">
                                 <ul id="thumbnail">
-                                    <li><img onClick={changeImage} src={product.image} width="70" alt='thumnail 1' /></li>
-                                    <li><img onClick={changeImage} src={product.image} width="70" alt='thumnail 2' /></li>
-                                    <li><img onClick={changeImage} src={product.image} width="70" alt='thumnail 3' /></li>
-                                    <li><img onClick={changeImage} src={product.image} width="70" alt='thumnail 4' /></li>
+                                    <li><img onClick={changeImage} src={product.image} className='img-thumbnail' width="70" alt='thumnail 1' /></li>
+                                    <li><img onClick={changeImage} src={product.image} className='img-thumbnail' width="70" alt='thumnail 2' /></li>
+                                    <li><img onClick={changeImage} src={product.image} className='img-thumbnail' width="70" alt='thumnail 3' /></li>
+                                    <li><img onClick={changeImage} src={product.image} className='img-thumbnail' width="70" alt='thumnail 4' /></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <div className="p-3 right-side">
+                        <div className="p-3 right-side m-auto">
                             <div className="d-flex justify-content-between align-items-center">
                                 <h3>{product.name}</h3>
                             </div>
                             <div className="mt-2 pr-3 content">
-                                <p>{product.description}</p>
+                                <p className='card-text'>{product.description}</p>
                             </div>
-                            <h3>{product.price}</h3>
+                            {/* <h3>{product.price}</h3>
                             <div>
                                 {
                                     isCount ?
@@ -65,7 +66,7 @@ const ItemDetail = ({ product }) => {
                                             </Link>
                                         </>
                                 }
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

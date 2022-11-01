@@ -1,18 +1,20 @@
+
 import img1 from '../infoModule/img/img1.jpg'
 import './InfoModuleContent.css'
 
-const InfoModuleContent = () => {
+const InfoModuleContent = ( {title, subTitle, text} ) => {
+
     return (
         <div className='container p-5'>
             <div className='row justify-content-between'>
                 <div className='col-lg-5'>
                     <div className='intro-excerpt'>
                         <h2>
-                            Modern Interior
-                            <span className='d-block'>Studio</span>
+                            {title}
+                            <span className='d-block'>{subTitle}</span>
                         </h2>
                         <p>
-                            Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum Loremipsum idolorum.
+                            {text}
                         </p>
                     </div>
                 </div>

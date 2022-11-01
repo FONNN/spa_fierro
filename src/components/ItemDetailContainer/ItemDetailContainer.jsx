@@ -28,7 +28,7 @@ const ItemDetailContainer = () => {
     }, [])
 
     return (
-        <div className="itemDetailContainer mt-3">
+        <div className="itemDetailContainer text-center pt-5">
             <ItemDetail product={product}/>
         </div>
     )

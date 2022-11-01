@@ -13,7 +13,6 @@ import Hero from './components/Hero/Hero'
 import DomusTeam from './components/DomusTeam/DomusTeam'
 import Formulary from './components/Formulary/Formulary'
 import Footer from './components/Footer/Footer'
-import HeroContent from './components/Hero/HeroContent/HeroContent'
 
 
 function App() {

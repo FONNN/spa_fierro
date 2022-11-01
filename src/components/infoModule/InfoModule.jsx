@@ -2,10 +2,11 @@ import InfoModuleContent from '../InfoModuleContent/InfoModuleContent'
 import './infoModule.css'
 // import img1 from './img/img1.jpg'
 
-const InfoModule = () => {
+const InfoModule = ( {mod} ) => {
+
     return (
         <div className='cl'>
-            <InfoModuleContent />
+            <InfoModuleContent title={mod.title} subTitle={mod.subTitle} text={mod.text}/>
         </div>
     )
 }

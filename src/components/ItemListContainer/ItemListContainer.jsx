@@ -15,41 +15,43 @@ const ItemListContainer = ({ greeting }) => {
 
   //designar lo indicado en el enrutado
   const { categoryid } = useParams()
+  // venta o arriendo
+  const { rentorsellid } = useParams()
 
   //*** traer producto por id forma 1***
-        // useEffect( () => {
-        //   const db = getFirestore() //<- trae el servicio de firestore (ya esta la conexion con firebase)
+  // useEffect( () => {
+  //   const db = getFirestore() //<- trae el servicio de firestore (ya esta la conexion con firebase)
 
-        //   const queryProduct = doc(db, 'items', 'I8uMsCFL0phOF4QrI1Gk')
-        //   getDoc(queryProduct)
-        //   .then(resp => setProducts( { id: resp.id, ...resp.data() }  ))
-        // }, [])
-        // console.log(products);
+  //   const queryProduct = doc(db, 'items', 'I8uMsCFL0phOF4QrI1Gk')
+  //   getDoc(queryProduct)
+  //   .then(resp => setProducts( { id: resp.id, ...resp.data() }  ))
+  // }, [])
+  // console.log(products);
   //*** END traer producto por id forma 1***
 
   //*** traer producto por id forma 2***
-        // useEffect(() => {
-        //   const db = getFirestore()
-        //   const queryCollection = collection(db, 'items')
-        //   getDocs(queryCollection)
-        //   .then(resp => setProducts( resp.docs.map(prod => ({ id: prod.id, ...prod.data() })) ))
-        //   .catch( err => console.log(err) )
-        //   .finally(() => setLoading(false))
-        // }, [])
+  // useEffect(() => {
+  //   const db = getFirestore()
+  //   const queryCollection = collection(db, 'items')
+  //   getDocs(queryCollection)
+  //   .then(resp => setProducts( resp.docs.map(prod => ({ id: prod.id, ...prod.data() })) ))
+  //   .catch( err => console.log(err) )
+  //   .finally(() => setLoading(false))
+  // }, [])
   //*** END traer producto por id forma 2***
 
   //*** traer producto por id forma 3 (query filtrada)***
-        // useEffect(() => {
-        //   const db = getFirestore()
-        //   const queryCollection = collection(db, 'items')
-        //   const qf = query(
-        //     queryCollection,
-        //     where('category', '==', 'shoes') )
-        //   getDocs(qf)
-        //   .then(resp => setProducts(resp.docs.map(prod => ({ id: prod.id, ...prod.data() } ))))
-        //   .catch( err => console.log(err) )
-        //   .finally(() => setLoading(false))
-        // }, [])
+  // useEffect(() => {
+  //   const db = getFirestore()
+  //   const queryCollection = collection(db, 'items')
+  //   const qf = query(
+  //     queryCollection,
+  //     where('category', '==', 'shoes') )
+  //   getDocs(qf)
+  //   .then(resp => setProducts(resp.docs.map(prod => ({ id: prod.id, ...prod.data() } ))))
+  //   .catch( err => console.log(err) )
+  //   .finally(() => setLoading(false))
+  // }, [])
   //*** END traer producto por id forma 3***
 
   //PRIMERA CONEXION CON BASE LOCAL task
@@ -88,23 +90,23 @@ const ItemListContainer = ({ greeting }) => {
       const db = getFirestore()
       const queryCollection = collection(db, 'items')
       getDocs(queryCollection)
-      .then(resp => setProducts( resp.docs.map(prod => ({ id: prod.id, ...prod.data() })) ))
-      .catch( err => console.log(err) )
-      .finally(() => setLoading(false))
+        .then(resp => setProducts(resp.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
+        .catch(err => console.log(err))
+        .finally(() => setLoading(false))
     }
   }, [categoryid])
 
   return (
     <div className='itemList__container text-center p-5'>
-        {loading ?
-          <h1>
-            <Spinner animation="grow" size="md" variant="success" />{' '}
-            <Spinner animation="grow" size="md" variant="light" />{' '}
-            <Spinner animation="grow" size="md" variant="dark" />
-          </h1>
-          :
-          <ItemList products={products}/>
-        }
+      {loading ?
+        <h1>
+          <Spinner animation="grow" variant="success" />{' '}
+          <Spinner animation="grow" variant="light" />{' '}
+          <Spinner animation="grow" variant="dark" />
+        </h1>
+        :
+        <ItemList products={products} />
+      }
     </div>
   )
 }
