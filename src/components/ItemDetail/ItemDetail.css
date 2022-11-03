@@ -1,6 +1,6 @@
-.card {
-  border: none;
+.itmDtail__card {
   overflow: hidden;
+  height: 80%;
 }
 
 .thumbnail_images ul {

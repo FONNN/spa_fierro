@@ -47,8 +47,9 @@
         text-transform: uppercase;
         font-weight: 500;
     }
-    p {
+    .carousel__p {
         font-weight: 400;
+        color: white !important;
     }
     @keyframes animate {
         0% {

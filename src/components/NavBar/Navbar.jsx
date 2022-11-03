@@ -22,7 +22,7 @@ const NavBar = () => {
     window.addEventListener = ('scroll', changeColor)
 
     return (
-        <Navbar className={color ? 'navbar navbar-bg fs-5' : 'navbar fs-5'} collapseOnSelect expand="lg" variant="light" fixed='top' >
+        <Navbar className={color ? 'navbar fs-5 navbar-bg' : 'navbar fs-5'} collapseOnSelect expand="lg" variant="light" fixed='top' >
             <Container>
                 <Nav.Link as={Link} to='/' >
                     <Navbar.Brand>
@@ -36,25 +36,24 @@ const NavBar = () => {
                 </Nav.Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto" onSelect={(selectedKey) => (`selected ${selectedKey}`)}>
                         {/*C07 - min1:35:00 */}
-                        <Nav.Link as={Link} to='/category/Casas'>
-                            Casas
-                        </Nav.Link>
-                        <Nav.Link as={Link} to='/category/Departamentos'>
-                            Departamentos
-                        </Nav.Link>
-                        <Nav.Link as={Link} to='/team'>
+                        <Nav.Link as={Link} to='/team' eventKey="link-1">
                             Nosotros
                         </Nav.Link>
-                        <NavDropdown title="Sector" id="collasible-nav-dropdown">
+                        <Nav.Link as={Link} to='/rentorsell/arriendo' eventKey="link-2">
+                            Arriendo
+                        </Nav.Link>
+                        <Nav.Link as={Link} to='/rentorsell/venta' eventKey="link-3">
+                            Venta
+                        </Nav.Link>
+                        <NavDropdown title="Proyectos" id="collasible-nav-dropdown">
                             <NavDropdown.Item as={Link} to='/products'>Proyectos</NavDropdown.Item>
-                            <NavDropdown.Item >Asesorias</NavDropdown.Item>
-                            <NavDropdown.Item >Inversiones</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item >
-                                Futuros proyectos
-                            </NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to='/category/Casas'>Casas</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to='/category/Departamentos'>Departamentos</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to='/category/Oficinas'>Oficinas</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to='/category/Terrenos'>Terrenos</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to='/category/Parcelas'>Parcelas</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav>

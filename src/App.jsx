@@ -27,6 +27,7 @@ function App() {
           <Routes>
             <Route index path='/' element={ <Hero/> } />
             <Route path='/category/:categoryid' element={ <ItemListContainer/> } />
+            <Route path='/rentorsell/:rentorsellid' element={ <ItemListContainer/> } />
             <Route path='/detail/:detailid' element={ <ItemDetailContainer/> } />
             <Route path='/team' element={ <DomusTeam/> } />
             <Route path='/products' element={ <ItemListContainer/> } />

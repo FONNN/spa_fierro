@@ -50,8 +50,9 @@
   text-transform: uppercase;
   font-weight: 500;
 }
-.carousel-item p {
+.carousel-item .carousel__p {
   font-weight: 400;
+  color: white !important;
 }
 @-webkit-keyframes animate {
   0% {

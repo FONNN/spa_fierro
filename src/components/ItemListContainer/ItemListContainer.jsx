@@ -40,7 +40,7 @@ const ItemListContainer = ({ greeting }) => {
   // }, [])
   //*** END traer producto por id forma 2***
 
-  //*** traer producto por id forma 3 (query filtrada)***
+  //*** traer producto por id forma 3 (productos filtrados)***
   // useEffect(() => {
   //   const db = getFirestore()
   //   const queryCollection = collection(db, 'items')
@@ -95,6 +95,51 @@ const ItemListContainer = ({ greeting }) => {
         .finally(() => setLoading(false))
     }
   }, [categoryid])
+
+  // venta-arriendo
+  // useEffect(() => {
+
+  //   if (rentorsellid) {
+  //     const db = getFirestore()
+  //     const queryCollection = collection(db, 'items')
+  //     const q = query(queryCollection, where("category", "==", "Casas"), where("place_state", "==", "arriendo"));
+  //     getDocs(q)
+  //       .then(resp => setProducts(resp.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
+  //       .catch(err => console.log(err))
+  //       .finally(() => setLoading(false))
+  //   } else {
+  //     const db = getFirestore()
+  //     const queryCollection = collection(db, 'items')
+  //     getDocs(queryCollection)
+  //       .then(resp => setProducts(resp.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
+  //       .catch(err => console.log(err))
+  //       .finally(() => setLoading(false))
+  //   }
+  // }, [rentorsellid])
+
+  // TEST
+  useEffect(() => {
+
+    if (rentorsellid) {
+      const db = getFirestore()
+      const queryCollection = collection(db, 'items')
+      const qfs = query(
+        queryCollection,
+        where('place_state', '==', rentorsellid)
+      )
+      getDocs(qfs)
+        .then(resp => setProducts(resp.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
+        .catch(err => console.log(err))
+        .finally(() => setLoading(false))
+    } else {
+      const db = getFirestore()
+      const queryCollection = collection(db, 'items')
+      getDocs(queryCollection)
+        .then(resp => setProducts(resp.docs.map(prod => ({ id: prod.id, ...prod.data() }))))
+        .catch(err => console.log(err))
+        .finally(() => setLoading(false))
+    }
+  }, [rentorsellid])
 
   return (
     <div className='itemList__container text-center p-5'>

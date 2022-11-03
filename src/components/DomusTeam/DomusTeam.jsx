@@ -9,9 +9,9 @@ const DomusTeam = () => {
             </div>
             <div className='row'>
                 <div className='col-md-6 col-lg-3 d-flex align-items-stretch'>
-                    <div className='card box bg-light mb-3'>
+                    <div className='card box bg-light mb-3 crdTm__card'>
                         <img
-                            className='card-img-top'
+                            className='card-img-top crdTm__img'
                             src='https://placeimg.com/640/480/any'
                             alt='foto tarjeta'
                         />

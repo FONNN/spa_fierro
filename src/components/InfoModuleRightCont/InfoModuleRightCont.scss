@@ -10,7 +10,7 @@
     }
 }
 
-.intro-excerpt {
+.intro-excerpt-r {
     max-width: 28.125rem;
     position: relative;
     z-index: 4;
@@ -25,11 +25,12 @@
         }
     }
 
-    .excerpt__p {
+    p {
         margin-bottom: 1.875rem;
-        color: white !important;
+        color: black;
     }
 }
+
 
 .cl-img-wrap {
     img {

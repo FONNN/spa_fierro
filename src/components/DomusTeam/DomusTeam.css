@@ -5,8 +5,12 @@
 .team .container {
   margin-top: 5rem;
 }
-.team .card {
+.team .crdTm__card {
   box-shadow: 0.625rem 0.313rem 0.313rem rgba(122, 122, 122, 0.38);
+  border: none !important;
+}
+.team .crdItm__img {
+  height: 100%;
 }
 .team h4 {
   color: #fff !important;

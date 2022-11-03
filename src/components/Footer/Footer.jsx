@@ -14,43 +14,43 @@ const Footer = () => {
                                 <Link to='/' className="nav-link p-0 text-muted">Inicio</Link>
                             </li>
                             <li className="nav-item mb-2">
-                                <Link to='/' className="nav-link p-0 text-muted">Venta</Link>
+                                <Link to='/rentorsell/arriendo' className="nav-link p-0 text-muted">Arriendo</Link>
                             </li>
                             <li className="nav-item mb-2">
-                                <Link to='/' className="nav-link p-0 text-muted">Arriendo</Link>
+                                <Link to='/rentorsell/venta' className="nav-link p-0 text-muted">Venta</Link>
                             </li>
                             <li className="nav-item mb-2">
                                 <Link to='/' className="nav-link p-0 text-muted">FAQs</Link>
                             </li>
                             <li className="nav-item mb-2">
-                                <Link to='/' className="nav-link p-0 text-muted">Nosotros</Link>
+                                <Link to='/team' className="nav-link p-0 text-muted">Nosotros</Link>
                             </li>
                         </ul>
                     </div>
 
                     <div className="col-6 col-md-2 mb-3">
-                        <h5>Section</h5>
+                        <h5>Destacados</h5>
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-muted">Home</a>
+                                <a href="https://www.sii.cl/valores_y_fechas/uf/uf2022.htm" className="nav-link p-0 text-muted">UF</a>
                             </li>
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-muted">Features</a>
+                                <a href="https://www.sii.cl/valores_y_fechas/dolar/dolar2022.htm" className="nav-link p-0 text-muted">Dólar</a>
                             </li>
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-muted">Pricing</a>
+                                <a href="https://www.sii.cl/valores_y_fechas/utm/utm2022.htm" className="nav-link p-0 text-muted">UTM - UTA - IPC</a>
                             </li>
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-muted">FAQs</a>
+                                <a href="https://www.sii.cl/valores_y_fechas/renta/datos_valores_renta.html" className="nav-link p-0 text-muted">Datos y valores de Renta</a>
                             </li>
                             <li className="nav-item mb-2">
-                                <a href="#" className="nav-link p-0 text-muted">About</a>
+                                <a href="https://www.sii.cl/valores_y_fechas/iva/datos_valores_iva.html" className="nav-link p-0 text-muted">Datos y valores de IVA</a>
                             </li>
                         </ul>
                     </div>
 
                     <div className="col-6 col-md-2 mb-3">
-                        <h5>Section</h5>
+                        <h5>Noticias</h5>
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2">
                                 <a href="#" className="nav-link p-0 text-muted">Home</a>
@@ -75,8 +75,8 @@ const Footer = () => {
                             <h5>Respondemos tus preguntas</h5>
                             <p className='text-muted'>Completa nuestro formulario y te contactaremos en 24 hrs.</p>
                             <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-                                <input id="newsletter1" type="text" className="form-control" placeholder="Correo electronico" />
-                                <Button as={Link} to="/formulary" variant='success'>Contáctanos</Button>
+                                {/* <input id="newsletter1" type="text" className="form-control" placeholder="Correo electronico" /> */}
+                                <Button as={Link} to="/formulary" className='m-auto' variant='success'>Contáctanos</Button>
                             </div>
                         </form>
                     </div>
@@ -84,7 +84,7 @@ const Footer = () => {
             </Container>
 
             <Container className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p className='m-3'>&copy; 2022 Inversiones Domus, SA. Derechos Reservados.</p>
+                <p className='m-3 footer__p'>&copy; 2022 Inversiones Domus, SA. Derechos Reservados.</p>
                 <ul className="list-unstyled d-flex">
                     <li className="ms-3">
                         <a className="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.facebook.com">

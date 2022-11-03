@@ -8,26 +8,26 @@
   margin: auto;
 }
 
-.intro-excerpt {
+.intro-excerpt-r {
   max-width: 28.125rem;
   position: relative;
   z-index: 4;
 }
-.intro-excerpt h2 {
+.intro-excerpt-r h2 {
   font-weight: 700;
   margin-bottom: 1.875rem;
   font-size: 1.875rem;
 }
 @media only screen and (min-width: 420px) {
-  .intro-excerpt h2 {
+  .intro-excerpt-r h2 {
     font-size: 3.375rem;
   }
 }
-.intro-excerpt .excerpt__p {
+.intro-excerpt-r p {
   margin-bottom: 1.875rem;
-  color: white !important;
+  color: black;
 }
 
 .cl-img-wrap img {
   border-radius: 0.75rem;
-}/*# sourceMappingURL=InfoModuleContent.css.map */
+}/*# sourceMappingURL=infoModuleRightCont.css.map */

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Carousel, Container } from 'react-bootstrap'
+import { Carousel, Container, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import "./HeroContent.css"
 import slide1 from '../images/slide1.jpg'
 import slide2 from '../images/slide2.jpg'
@@ -19,7 +20,7 @@ const HeroContent = () => {
                         />
                         <Carousel.Caption>
                             <h3>tu espacio</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <p className='carousel__p'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className="w-100">
@@ -32,8 +33,8 @@ const HeroContent = () => {
 
                         <Carousel.Caption>
                             <h3>proyectos</h3>
-                            <p>Descubre el proyecto a tu medida</p>
-                            <button className="btn btn-success mb-3"> Ver Más </button>
+                            <p className='carousel__p'>Descubre el proyecto a tu medida</p>
+                            <Button className='mb-3' as={Link} to="/products" variant='success'>Ver más</Button>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className="w-100">
@@ -44,7 +45,7 @@ const HeroContent = () => {
                         />
                         <Carousel.Caption>
                             <h3>Asesoría</h3>
-                            <p>Te acompanamos en todo el proceso de compra.</p>
+                            <p className='carousel__p'>Te acompanamos en todo el proceso de compra.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item className="w-100">
@@ -57,7 +58,7 @@ const HeroContent = () => {
 
                         <Carousel.Caption>
                             <h3>inversionistas</h3>
-                            <p>
+                            <p className='carousel__p'>
                                 Te asesoramos cómo realizar tu inversión de manera exitosa.
                             </p>
                         </Carousel.Caption>

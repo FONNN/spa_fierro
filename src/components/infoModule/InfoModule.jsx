@@ -6,7 +6,7 @@ const InfoModule = ( {mod} ) => {
 
     return (
         <div className='cl'>
-            <InfoModuleContent title={mod.title} subTitle={mod.subTitle} text={mod.text}/>
+            <InfoModuleContent title={mod.title} subTitle={mod.subTitle} text={mod.text} image={mod.image}/>
         </div>
     )
 }

@@ -25,8 +25,8 @@ const ItemDetail = ({ product }) => {
     return (
 
         <div className="container pt-5 mt-5 mb-5">
-            <h2>Detalle</h2>
-            <div className="card h-100">
+            <h2>{product.category}: {product.name}</h2>
+            <div className="card itmDtail__card">
                 <div className="row m-3">
                     <div className="col-md-6 border-end">
                         <div className="d-flex flex-column justify-content-center">
@@ -43,13 +43,14 @@ const ItemDetail = ({ product }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6">
-                        <div className="p-3 right-side m-auto">
+                    <div className="col-md-6 m-auto">
+                        <div className="p-3 right-side">
                             <div className="d-flex justify-content-between align-items-center">
-                                <h3>{product.name}</h3>
+                                <h3 className='m-auto'>{product.name}</h3>
                             </div>
                             <div className="mt-2 pr-3 content">
                                 <p className='card-text'>{product.description}</p>
+                                <p className='card-text'>{product.place_state}</p>
                             </div>
                             {/* <h3>{product.price}</h3>
                             <div>

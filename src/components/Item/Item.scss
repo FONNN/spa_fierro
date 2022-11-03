@@ -1,17 +1,37 @@
-// $primary: #6610f2;
-// $success: #20c997;
+// @import "../../../node_modules/bootstrap/scss/bootstrap";
+// .card {
+//   border-radius: 0.75rem !important;
 
-// $theme-colors: (
-//   "primary": $primary,
-//   "success": $success
-// );
+//   .p_item {
+//     color: rgb(37, 37, 37);
+//   }
+// }
 
-
-@import "../../../node_modules/bootstrap/scss/bootstrap";
 .card {
-  border-radius: 0.75rem !important;
+  box-shadow: 0.625rem 0.313rem 0.313rem rgba(122, 122, 122, 0.38);
+  height: 90%;
+  border: none !important;
+}
 
-  .p_item {
-    color: rgb(37, 37, 37);
+.crdItm__img {
+  height: 100%;
+}
+
+h4 {
+  color: #fff !important;
+}
+
+p {
+  color: #000 !important;
+}
+
+.box {
+  border-radius: 0.75rem;
+
+  h4 {
+      background-color: var(--green-color) !important;
+  }
+  blockquote {
+      font-family: 'Raleway', sans-serif;
   }
 }
