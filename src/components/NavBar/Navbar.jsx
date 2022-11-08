@@ -2,7 +2,7 @@
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
 // react-bootstrap
-import {Container , NavDropdown, Navbar, Nav, Button} from 'react-bootstrap'
+import { Container, NavDropdown, Navbar, Nav, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import logo from './img/logo_Domus2.png'
 import { useState } from 'react'
@@ -12,7 +12,8 @@ const NavBar = () => {
     //change color on scroll
     const [color, setColor] = useState(false)
     const changeColor = () => {
-        if (window.scrollY >= 30) {
+        console.log(window.scrollY)
+        if (window.scrollY >= 80) {
             setColor(true)
         } else {
             setColor(false)
@@ -39,7 +40,7 @@ const NavBar = () => {
                     <Nav className="me-auto" onSelect={(selectedKey) => (`selected ${selectedKey}`)}>
                         {/*C07 - min1:35:00 */}
                         <Nav.Link as={Link} to='/team' eventKey="link-1">
-                            Nosotros
+                            Quiénes somos
                         </Nav.Link>
                         <Nav.Link as={Link} to='/rentorsell/arriendo' eventKey="link-2">
                             Arriendo
