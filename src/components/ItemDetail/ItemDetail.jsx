@@ -22,10 +22,12 @@ const ItemDetail = ({ product }) => {
         mpi.src = element.target.src;
     }
 
+    console.log(product);
+
     return (
 
         <div className="container pt-5 mt-5 mb-5">
-            <h2>{product.category}: {product.name}</h2>
+            <h2>{product.category}</h2>
             <div className="card itmDtail__card">
                 <div className="row m-3">
                     <div className="col-md-6 border-end">
@@ -36,9 +38,9 @@ const ItemDetail = ({ product }) => {
                             <div className="thumbnail_images">
                                 <ul id="thumbnail">
                                     <li><img onClick={changeImage} src={product.image} className='img-thumbnail' width="70" alt='thumnail 1' /></li>
-                                    <li><img onClick={changeImage} src={product.image} className='img-thumbnail' width="70" alt='thumnail 2' /></li>
-                                    <li><img onClick={changeImage} src={product.image} className='img-thumbnail' width="70" alt='thumnail 3' /></li>
-                                    <li><img onClick={changeImage} src={product.image} className='img-thumbnail' width="70" alt='thumnail 4' /></li>
+                                    <li><img onClick={changeImage} src={product.image1} className='img-thumbnail' width="70" alt='thumnail 2' /></li>
+                                    <li><img onClick={changeImage} src={product.image2} className='img-thumbnail' width="70" alt='thumnail 3' /></li>
+                                    <li><img onClick={changeImage} src={product.image3} className='img-thumbnail' width="70" alt='thumnail 4' /></li>
                                 </ul>
                             </div>
                         </div>
