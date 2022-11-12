@@ -21,7 +21,7 @@ const Hero = () => {
     const mod3 = {
         title: 'Nuestra',
         subTitle: 'Empresa',
-        text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus magnam optio molestias, suscipit placeat asperiores vel quis tempora ea consequatur. 3',
+        text: 'En Domus SPA, ayudamos a concretar sueños y objetivos de cada uno de nuestros clientes, quienes son nuestro activo más importante.',
         image: 'https://cdn.pixabay.com/photo/2019/02/06/16/32/architect-3979490_1280.jpg'
     }
 

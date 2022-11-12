@@ -7,6 +7,10 @@
 .bForm span {
   color: #d23200 !important;
 }
+.bForm .msg-chars-left {
+  margin-left: 0.5rem;
+  text-align: left;
+}
 .bForm .btn {
   margin: auto;
 }

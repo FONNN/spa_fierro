@@ -22,8 +22,6 @@ const ItemDetail = ({ product }) => {
         mpi.src = element.target.src;
     }
 
-    console.log(product);
-
     return (
 
         <div className="container pt-5 mt-5 mb-5">
@@ -52,6 +50,7 @@ const ItemDetail = ({ product }) => {
                             </div>
                             <div className="mt-2 pr-3 content">
                                 <p className='card-text'>{product.description}</p>
+                                <p className='card-text'>{product.price}</p>
                                 <p className='card-text'>{product.place_state}</p>
                             </div>
                             {/* <h3>{product.price}</h3>
