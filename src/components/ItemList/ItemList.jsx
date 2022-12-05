@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 import Divider from '../Divider/Divider';
 import Item from '../Item/Item';
 
-const ItemList = 
+const ItemList =
     ({ products }) => {
 
         const listTitle = products.find(objProd => objProd)

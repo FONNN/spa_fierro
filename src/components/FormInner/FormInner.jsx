@@ -3,7 +3,6 @@ import { Form, Button, Row, Col } from 'react-bootstrap'
 import './FormInner.css'
 import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
-// init('iBEnkAwErvEem2Z79')
 
 const FormInner = () => {
 
@@ -31,7 +30,7 @@ const FormInner = () => {
     const msgCharsLeft = 400 - msg.length;
 
     return (
-        <Form ref={form} className='bForm rounded p-2 p-sm-4' id='contact-form' onSubmit={handleSubmit(onSubmit)}>
+        <Form ref={form} className='bForm rounded p-2 p-sm-4' onSubmit={handleSubmit(onSubmit)}>
             <Row className='m-auto'>
                 <Col>
                     <Form.Group className="mb-3" controlId="formBasicInput">
@@ -45,8 +44,8 @@ const FormInner = () => {
                                     message: 'El campo es requerido'
                                 },
                                 pattern: {
-                                    value: /^[A-Za-z]+$/i,
-                                    message: 'El formato no es correcto'
+                                    value: /^[a-zA-Z ,.'-]+ [a-zA-Z]+$/i,
+                                    message: 'Nombre y Apellido son requeridos'
                                 }
                             })}
                         />

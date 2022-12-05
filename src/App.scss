@@ -18,9 +18,11 @@
   background-color: var(--pastel-background);
   font-family: 'Playfair Display', serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   height: 100%;
 
@@ -29,11 +31,12 @@ body {
     font-size: 1.875rem;
 
     @media only screen and (min-width: 420px) {
-        font-size: 3.375rem;
+      font-size: 3.375rem;
     }
-}
+  }
 
-  button,  p {
-      font-family: 'Roboto', sans-serif;
+  button,
+  p {
+    font-family: 'Roboto', sans-serif;
   }
 }
