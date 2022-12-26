@@ -22,7 +22,7 @@ const Hero = () => {
         title: 'Nuestra',
         subTitle: 'Empresa',
         text: 'En Domus SPA, ayudamos a concretar sueños y objetivos de cada uno de nuestros clientes, quienes son nuestro activo más importante.',
-        image: 'https://cdn.pixabay.com/photo/2019/02/06/16/32/architect-3979490_1280.jpg'
+        image: 'https://drive.google.com/uc?id=1WeYDB3VEyU3rPhEO0wbyS00fuaKJNcQw'
     }
 
     return (

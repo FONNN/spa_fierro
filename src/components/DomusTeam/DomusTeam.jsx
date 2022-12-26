@@ -1,8 +1,8 @@
 import { Container } from 'react-bootstrap'
 import Divider from '../Divider/Divider'
 import './DomusTeam.css'
-import prof2 from './img/profilePic2.jpg'
-import prof3 from './img/test1.jpg'
+import prof2 from './img/eduardo.jpg'
+import prof3 from './img/pamela.jpg'
 
 const DomusTeam = () => {
     return (
